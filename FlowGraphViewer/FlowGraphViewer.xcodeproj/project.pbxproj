@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1AAA36A82192C0B00052287E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAA36A72192C0B00052287E /* AppDelegate.swift */; };
+		1AAA36AA2192C0B00052287E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAA36A92192C0B00052287E /* ViewController.swift */; };
+		1AAA36AC2192C0B20052287E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AAA36AB2192C0B20052287E /* Assets.xcassets */; };
+		1AAA36AF2192C0B20052287E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AAA36AD2192C0B20052287E /* Main.storyboard */; };
+		1AAA36BB2192C0B20052287E /* FlowGraphViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAA36BA2192C0B20052287E /* FlowGraphViewerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1AAA36B72192C0B20052287E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AAA369C2192C0B00052287E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AAA36A32192C0B00052287E;
+			remoteInfo = FlowGraphViewer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1AAA36A42192C0B00052287E /* FlowGraphViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowGraphViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AAA36A72192C0B00052287E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1AAA36A92192C0B00052287E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1AAA36AB2192C0B20052287E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1AAA36AE2192C0B20052287E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1AAA36B02192C0B20052287E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AAA36B12192C0B20052287E /* FlowGraphViewer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FlowGraphViewer.entitlements; sourceTree = "<group>"; };
+		1AAA36B62192C0B20052287E /* FlowGraphViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowGraphViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AAA36BA2192C0B20052287E /* FlowGraphViewerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowGraphViewerTests.swift; sourceTree = "<group>"; };
+		1AAA36BC2192C0B20052287E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1AAA36A12192C0B00052287E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AAA36B32192C0B20052287E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1AAA369B2192C0B00052287E = {
+			isa = PBXGroup;
+			children = (
+				1AAA36A62192C0B00052287E /* FlowGraphViewer */,
+				1AAA36B92192C0B20052287E /* FlowGraphViewerTests */,
+				1AAA36A52192C0B00052287E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1AAA36A52192C0B00052287E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AAA36A42192C0B00052287E /* FlowGraphViewer.app */,
+				1AAA36B62192C0B20052287E /* FlowGraphViewerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AAA36A62192C0B00052287E /* FlowGraphViewer */ = {
+			isa = PBXGroup;
+			children = (
+				1AAA36A72192C0B00052287E /* AppDelegate.swift */,
+				1AAA36A92192C0B00052287E /* ViewController.swift */,
+				1AAA36AB2192C0B20052287E /* Assets.xcassets */,
+				1AAA36AD2192C0B20052287E /* Main.storyboard */,
+				1AAA36B02192C0B20052287E /* Info.plist */,
+				1AAA36B12192C0B20052287E /* FlowGraphViewer.entitlements */,
+			);
+			path = FlowGraphViewer;
+			sourceTree = "<group>";
+		};
+		1AAA36B92192C0B20052287E /* FlowGraphViewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				1AAA36BA2192C0B20052287E /* FlowGraphViewerTests.swift */,
+				1AAA36BC2192C0B20052287E /* Info.plist */,
+			);
+			path = FlowGraphViewerTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1AAA36A32192C0B00052287E /* FlowGraphViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AAA36BF2192C0B20052287E /* Build configuration list for PBXNativeTarget "FlowGraphViewer" */;
+			buildPhases = (
+				1AAA36A02192C0B00052287E /* Sources */,
+				1AAA36A12192C0B00052287E /* Frameworks */,
+				1AAA36A22192C0B00052287E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlowGraphViewer;
+			productName = FlowGraphViewer;
+			productReference = 1AAA36A42192C0B00052287E /* FlowGraphViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1AAA36B52192C0B20052287E /* FlowGraphViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AAA36C22192C0B20052287E /* Build configuration list for PBXNativeTarget "FlowGraphViewerTests" */;
+			buildPhases = (
+				1AAA36B22192C0B20052287E /* Sources */,
+				1AAA36B32192C0B20052287E /* Frameworks */,
+				1AAA36B42192C0B20052287E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AAA36B82192C0B20052287E /* PBXTargetDependency */,
+			);
+			name = FlowGraphViewerTests;
+			productName = FlowGraphViewerTests;
+			productReference = 1AAA36B62192C0B20052287E /* FlowGraphViewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1AAA369C2192C0B00052287E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Yuki Yasoshima";
+				TargetAttributes = {
+					1AAA36A32192C0B00052287E = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					1AAA36B52192C0B20052287E = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 1AAA36A32192C0B00052287E;
+					};
+				};
+			};
+			buildConfigurationList = 1AAA369F2192C0B00052287E /* Build configuration list for PBXProject "FlowGraphViewer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1AAA369B2192C0B00052287E;
+			productRefGroup = 1AAA36A52192C0B00052287E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1AAA36A32192C0B00052287E /* FlowGraphViewer */,
+				1AAA36B52192C0B20052287E /* FlowGraphViewerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1AAA36A22192C0B00052287E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AAA36AC2192C0B20052287E /* Assets.xcassets in Resources */,
+				1AAA36AF2192C0B20052287E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AAA36B42192C0B20052287E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1AAA36A02192C0B00052287E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AAA36AA2192C0B00052287E /* ViewController.swift in Sources */,
+				1AAA36A82192C0B00052287E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AAA36B22192C0B20052287E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AAA36BB2192C0B20052287E /* FlowGraphViewerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1AAA36B82192C0B20052287E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AAA36A32192C0B00052287E /* FlowGraphViewer */;
+			targetProxy = 1AAA36B72192C0B20052287E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1AAA36AD2192C0B20052287E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AAA36AE2192C0B20052287E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1AAA36BD2192C0B20052287E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1AAA36BE2192C0B20052287E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		1AAA36C02192C0B20052287E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FlowGraphViewer/FlowGraphViewer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WVVR5YE53F;
+				INFOPLIST_FILE = FlowGraphViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.objective-audio.FlowGraphViewer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		1AAA36C12192C0B20052287E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FlowGraphViewer/FlowGraphViewer.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WVVR5YE53F;
+				INFOPLIST_FILE = FlowGraphViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.objective-audio.FlowGraphViewer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		1AAA36C32192C0B20052287E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WVVR5YE53F;
+				INFOPLIST_FILE = FlowGraphViewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.objective-audio.FlowGraphViewerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlowGraphViewer.app/Contents/MacOS/FlowGraphViewer";
+			};
+			name = Debug;
+		};
+		1AAA36C42192C0B20052287E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WVVR5YE53F;
+				INFOPLIST_FILE = FlowGraphViewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.objective-audio.FlowGraphViewerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlowGraphViewer.app/Contents/MacOS/FlowGraphViewer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1AAA369F2192C0B00052287E /* Build configuration list for PBXProject "FlowGraphViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AAA36BD2192C0B20052287E /* Debug */,
+				1AAA36BE2192C0B20052287E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AAA36BF2192C0B20052287E /* Build configuration list for PBXNativeTarget "FlowGraphViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AAA36C02192C0B20052287E /* Debug */,
+				1AAA36C12192C0B20052287E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AAA36C22192C0B20052287E /* Build configuration list for PBXNativeTarget "FlowGraphViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AAA36C32192C0B20052287E /* Debug */,
+				1AAA36C42192C0B20052287E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1AAA369C2192C0B00052287E /* Project object */;
+}
