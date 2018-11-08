@@ -1,0 +1,6 @@
+framework module FlowGraphDotConverterCore {
+  umbrella header "FlowGraphDotConverterCore-umbrella.h"
+
+  export *
+  module * { export * }
+}

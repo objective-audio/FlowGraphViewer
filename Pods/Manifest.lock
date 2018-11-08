@@ -1,0 +1,40 @@
+PODS:
+  - FlowGraph (0.5.0)
+  - FlowGraphDotConverterCore (0.5.0):
+    - FlowGraph
+    - SourceKittenFramework
+  - SourceKittenFramework (0.21.2):
+    - SWXMLHash (~> 4.7)
+    - Yams (~> 1.0)
+  - SWXMLHash (4.7.4)
+  - Yams (1.0.1)
+
+DEPENDENCIES:
+  - FlowGraphDotConverterCore (from `https://github.com/objective-audio/FlowGraphDotConverter.git`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FlowGraph
+    - SourceKittenFramework
+    - SWXMLHash
+    - Yams
+
+EXTERNAL SOURCES:
+  FlowGraphDotConverterCore:
+    :git: https://github.com/objective-audio/FlowGraphDotConverter.git
+
+CHECKOUT OPTIONS:
+  FlowGraphDotConverterCore:
+    :commit: c98ddb7a1339bb96537bd0ab04bae34f426b28a6
+    :git: https://github.com/objective-audio/FlowGraphDotConverter.git
+
+SPEC CHECKSUMS:
+  FlowGraph: 8a9a06b0b1b0b2ec60d09c69ddff34a50b392a16
+  FlowGraphDotConverterCore: 5ebc145fb0151180152dd90f3ee2c148e2c95478
+  SourceKittenFramework: 939cbc178445dfd3700a7476187ad36443a1d756
+  SWXMLHash: b35739a5cfd915c3b482977aa720d6708e260a90
+  Yams: 572f625a8b719b73e0b57fd313c680f3e2161fe9
+
+PODFILE CHECKSUM: 3951acfc7bed7b17cd9769cc6eef07718059f9ce
+
+COCOAPODS: 1.6.0.beta.2

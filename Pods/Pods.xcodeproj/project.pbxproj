@@ -1,0 +1,1769 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		015FE024337C6DC563AB04F5E4B718D1 /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B741E6DBFB8471A16ADD9DAACB4D69 /* Resolver.swift */; };
+		0278CA2B0B8EDD8E59B18D3D9862DBF4 /* FlowGraphScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317E4029CB1A35F875C27AE6A1921094 /* FlowGraphScanner.swift */; };
+		051E98FBCC3933805924AB51D882AF6C /* reader.c in Sources */ = {isa = PBXBuildFile; fileRef = A93B5018F98F67472A8D803B21AC8B35 /* reader.c */; };
+		057B91CC97B158FD79CD741D6EA7C11E /* Constructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794C9E8DE91281DABD41BE6C8FA9AFD7 /* Constructor.swift */; };
+		091B54770C4C0F618CFFD58F3381B3F0 /* api.c in Sources */ = {isa = PBXBuildFile; fileRef = D4A7A7F0FC902F50CF8595529B20A171 /* api.c */; };
+		0D3CCDAAD136D6390DD1E99F0F823E8D /* Yams.h in Headers */ = {isa = PBXBuildFile; fileRef = C7B6CC8721FD1A746744111CA305E700 /* Yams.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D7DCD5B54A2C8D89140BA26B7CA8F43 /* FlowGraph-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 643A4D64B67C088E3688C8F5FCBC2C8F /* FlowGraph-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0DF899EBA6A9433047D45F88B61A653F /* CYaml.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A4AD56AF0D1E29211624E3BB9DDF395 /* CYaml.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E16A0DE95C6D1CA049EF024C745F358 /* SourceKitObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675169AB1C46CC6D1EC0697E3D94585B /* SourceKitObject.swift */; };
+		0E804FAC6BF05D2293D4C2BCB84D4783 /* String+Yams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77522F2A4636360B292A548E1DD76F0B /* String+Yams.swift */; };
+		135A94831F6B815C03DD1F42FD38CB88 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E200AAF8E3EA27EC024DAB55F2D715A /* Cocoa.framework */; };
+		142B4019626D2CB6F15A8F2473F77E9E /* FlowGraphInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6133F4760D916AEBCDF3014923B3EA8 /* FlowGraphInstance.swift */; };
+		1A6ED6E2C32E0A7ED0888005852837E8 /* SwiftDeclarationAttributeKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D208EE8FBACE3D30E2DBB181568457 /* SwiftDeclarationAttributeKind.swift */; };
+		1D473BD1F8F90954E268389C5961068C /* CodeBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6229C836B11B94C01345324A74F644F /* CodeBase.swift */; };
+		1EADADB7246EB253C7D0DF85C1B51BFB /* CodeCompletionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACBA6EBAC62CFE0D7B41B3B61F5C901 /* CodeCompletionItem.swift */; };
+		1F0A28B14860AC403B4AFE9A6A6BE6ED /* library_wrapper_Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30577367F76710F3F639DFDF5DBA48E /* library_wrapper_Index.swift */; };
+		1F20C42B6B468729FB69C4B56A445F3B /* SWXMLHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BC31BD2ACC5E81A3C3D23E0F040431 /* SWXMLHash.swift */; };
+		21FB160CF82BAFF3911D7B6504809D17 /* SwiftDocKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E9A5F24DDA58B01DC0CE3F7DF36379 /* SwiftDocKey.swift */; };
+		2275AAF8B4A97CC946C657E5D8BE9F8D /* CXCompilationDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DE4DBCEF98ED324AC15A193E64DDC3B /* CXCompilationDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23265F8DCE962F7B54FBEE975C834CA2 /* SourceKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E2DBF7F2F72351A9EF447EF9C4F167B5 /* SourceKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25FE372819507178B2F8B5EB55880EC9 /* SourceDeclaration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48D4F95B8B951462DE69219137D0D79 /* SourceDeclaration.swift */; };
+		2BA0880E0D4EBCD3A1A28060ACE587E4 /* FlowGraphState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C5B7A6D9CD484629EEDC4B472F9BC3 /* FlowGraphState.swift */; };
+		332A5D02945E40196531BB8C03D45A4A /* SwiftDocs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8AAD7A21E2D126F5D519F6B8F5EF77 /* SwiftDocs.swift */; };
+		3341676B84C0E939CB68CB6BDF2F9508 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E200AAF8E3EA27EC024DAB55F2D715A /* Cocoa.framework */; };
+		33D945447383054538484584B15F40E7 /* Parameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD25B5640569A99ACCA24A513B5CE69 /* Parameter.swift */; };
+		3B5E03C342FECB0300E908AF80ECF7B0 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35E69EA4155DC04D940CCF0F431F4B1 /* Request.swift */; };
+		3C78CF93AFD21B366289A13ED80C6374 /* CXString.h in Headers */ = {isa = PBXBuildFile; fileRef = 315A0F58335E6FCD2B9DF69D81FD7543 /* CXString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3EA5EEF56E44981F2231B5F94936ED20 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E200AAF8E3EA27EC024DAB55F2D715A /* Cocoa.framework */; };
+		3F1BCBD6C16E68B888E6A277550F3E13 /* SwiftExprKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65687D7E893AA985715047B47B7FCD2 /* SwiftExprKind.swift */; };
+		407A4F1C3461F09CF357735361625A29 /* library_wrapper_CXString.swift in Sources */ = {isa = PBXBuildFile; fileRef = E644DB0D09FF097C8C2C4F4D82ACA69A /* library_wrapper_CXString.swift */; };
+		4DBD0566770E1BDF65348C22D60BE811 /* CXErrorCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EB7074AE97F315D9A9C2A01A9D223CD /* CXErrorCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FBC77FDEE95CE1A8282ABD08847CE68 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23961E70C87F740939FA1C766D9AC02 /* File.swift */; };
+		56FDBDD4B7D3C11A99A7498C4A51999E /* SourceLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587BDD20299DF52294C6235113BE6E3F /* SourceLocation.swift */; };
+		582B36DF9AED2D4649D4B1593D478D56 /* FlowGraph-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAA7009B1266DEF9DCC2BCB2A67088E /* FlowGraph-dummy.m */; };
+		5C87658CCF9DDDD6F8BCF6553FB53B65 /* Yams-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A50CF19955AE82F3566100D3B33C6461 /* Yams-dummy.m */; };
+		5EEA74BE754E48E37FF47D66D69CC3D0 /* Xcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEF45C1B85CD19D2CD4B72BB3DD62FB /* Xcode.swift */; };
+		609C07AC7670EF7C3B477A8D2824D698 /* JSONOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB989D658FF68D036240EE597799F0D1 /* JSONOutput.swift */; };
+		60D28C23F18D6E9CFCD81B26355BCCF3 /* Yams-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F8C70DEA6260F0EFC8CC472EB52F8C4 /* Yams-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		611A1D89CB01B754A38ED78D415CB697 /* Yams.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C540F1661E7A1D58C9E0220B6BE0008 /* Yams.framework */; };
+		63B87E4FDEFC24660913E6092FECC543 /* FlowGraphInitialState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B3A663EACBE3DA510FAABB176368A3 /* FlowGraphInitialState.swift */; };
+		64A5D7648E8D03A15EA553FDAAA4F52A /* SWXMLHash-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3A7737AC7ED49393AE00D1469C9E1D /* SWXMLHash-dummy.m */; };
+		6A63829FEA718FF914BA7A29C8CC5219 /* Emitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828A895D40FF48645474CAA0F9AED0C3 /* Emitter.swift */; };
+		6BE00A2C874589F33E6826A0C32402F1 /* FlowGraphDotConverterCore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC850B4B51C6B5440466637882B5071 /* FlowGraphDotConverterCore-dummy.m */; };
+		6C7F1DF9FFEDE536C6DF8DD8092B1690 /* StatementKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A204DC09654D4A061DEB475E13EA72A /* StatementKind.swift */; };
+		6D2F6D7957E8663FF2BD07F91AC573AE /* SyntaxToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CEC83DF279647CFAD4CAB8DECFB74E /* SyntaxToken.swift */; };
+		6D4E143CBF1C953F8747F04ED4A6D79A /* SyntaxMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D357F5FC1E0C9C172CBB9FDBB16D0FD /* SyntaxMap.swift */; };
+		729D472B46981CF4E6BC91FD863B9F1B /* FlowGraph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C7BC953981B81FB48AD45CEDE17B1D4 /* FlowGraph.framework */; };
+		73497F2449301CBE6F5F159605455316 /* ObjCDeclarationKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 598D8D80230FBF16CFB91A43E438F9E8 /* ObjCDeclarationKind.swift */; };
+		81061ECE79FA9E6F4C64960D22F40544 /* FlowGraphNextState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC5ACE2CC0FEECC74E2C059E10587E1 /* FlowGraphNextState.swift */; };
+		836C5C1462031AA56225F1195E25F7D0 /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB3AC90D8F3149A3E742591F94D9C0D /* Version.swift */; };
+		85684F64BADD615C72C282A6E2AB061E /* writer.c in Sources */ = {isa = PBXBuildFile; fileRef = CDFE41BBC69117D2B0CFAC4FE9FA6662 /* writer.c */; };
+		8607321DA3878B53031F948A976C3F4A /* emitter.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CDF5BB5E860F2B4DD1458ADC9677C57 /* emitter.c */; };
+		867A47459DD752CFCAECD3EE77A2C1D9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E200AAF8E3EA27EC024DAB55F2D715A /* Cocoa.framework */; };
+		8A80516922058DECE06A352678EB86A7 /* CodeStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F064DB1F5985D05F9D7A1AC066293F0 /* CodeStructure.swift */; };
+		8C89C26BE23ACBD946871ABA5495FCC0 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D3C8FBD3AD1BDA2BF42B3E63892044 /* Node.swift */; };
+		8D66121F3A8D5EDEC6BA1C360FD3AA4A /* yaml_private.h in Headers */ = {isa = PBXBuildFile; fileRef = B575C2C58473B4D76642B834AC583655 /* yaml_private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9037563957E3AAFE0705C5975780CC0E /* Documentation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EB65B929A90AE7110A769AB3FD348D6 /* Documentation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91BB099F72A0BBB1898EB1C06796256A /* Clang+SourceKitten.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18E59EC5D7691309BA6BC6EDADA26A3 /* Clang+SourceKitten.swift */; };
+		9B804E95CB57D726FC2E24F963C57D2E /* SWXMLHash+TypeConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7080DAEB67890199843159E81AE069 /* SWXMLHash+TypeConversion.swift */; };
+		9F03F936634A819F2D3116DED3463DC6 /* shim.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD4DDF7EF65090C2181196A36366975 /* shim.swift */; };
+		A0BFC496E07917CF3647B2CCD8A637B8 /* Index.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C1246444E08CF631C4A4D6AAC7E9818 /* Index.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1940228803CFB01EEF74A800B1C81E9 /* shim.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FA74EE19253A06A98601AC691A1C9F /* shim.swift */; };
+		A1BB82B43D7ED7D521FCECC213CBCB30 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A0B01F410B19D4CB559B4986008FE8 /* Language.swift */; };
+		A27C8D89E83C6E9DF33314FFD20178E0 /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B01070B3D8F43C8CCCD45DA86377BE5 /* Decoder.swift */; };
+		A2FB4203C4696FD989D47823D7C14D60 /* CodeScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CD22A0F02E82BD657504086D97E6B4 /* CodeScanner.swift */; };
+		A3847CEF6016941BE2E3C1F9488849AB /* UID.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BF9FC45A83262DD6A3B01A63AD943F /* UID.swift */; };
+		A3CC2887DDFE15AC599A96361AF5BFA4 /* Pods-FlowGraphViewer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DBF5CAEE8E790A109E5B05C545D90D8C /* Pods-FlowGraphViewer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFE9363759F2365FDDE3DDFF7E5D0880 /* OffsetMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FE0437EC59DA16BFC23CDE125287DF /* OffsetMap.swift */; };
+		B045B7868E1EC844C1BE36BC5D666B30 /* String+SourceKitten.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF970BBDB654E229A35383866F1A83AA /* String+SourceKitten.swift */; };
+		B0796B3CBAC9D30B17FABB22F18FDD1C /* library_wrapper_Documentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEC6312692DCCAD0510E7F9174270AA /* library_wrapper_Documentation.swift */; };
+		B23C87BF52BCC334E06182197A08AA13 /* Pods-FlowGraphViewer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A85333A135DC165098B8F8A77D11E88 /* Pods-FlowGraphViewer-dummy.m */; };
+		B34948CDF1F6DEABEA741235C5579297 /* FlowGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABEDA1167604D2A7772F73948C89FD7 /* FlowGraph.swift */; };
+		B39CD5F4C8E1DC875195573D43757ABE /* FlowGraphDotConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F529661205ECD0D9D591A7F63D5732 /* FlowGraphDotConverter.swift */; };
+		B3F105595D8D8E3F8C0885DA075E145C /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B26D8ECD5AE3D70106CE988CFF0F888 /* Parser.swift */; };
+		B746EF907EE2BDEA490F61DA15E7E453 /* SyntaxKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9A14EEE99F355C4987028ABF3D29D6 /* SyntaxKind.swift */; };
+		B9626447DA9FCDC87621268957CB2E56 /* Node.Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418270A5D29D5877C963764C93B9F88F /* Node.Sequence.swift */; };
+		BD439941EC1A8F7DA30D8731F48B0B30 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = F649AD0BB2025AC2106194F228A42C07 /* Module.swift */; };
+		C1B857FE788F301F7BE6AEE884AB2A99 /* SourceKittenFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8039064281A528BE159C1C8DAD4440A2 /* SourceKittenFramework.framework */; };
+		C32966AC233C7CA7F98C97E800E3797F /* library_wrapper_sourcekitd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC307D7BAB96D9E8757F95479ED0F0F /* library_wrapper_sourcekitd.swift */; };
+		C5D70672F30DBE9B0CA8278D0CF7718B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E200AAF8E3EA27EC024DAB55F2D715A /* Cocoa.framework */; };
+		C6EB7B71035F5D3A4CCF0D936666B2A5 /* Platform.h in Headers */ = {isa = PBXBuildFile; fileRef = 949D323BB896437466A48B4CCBE83570 /* Platform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C961E186FD04B117AD21D0CD6E249508 /* SourceKittenFramework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CF428BF934AF8C57BB733736E22A279 /* SourceKittenFramework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB6518A43B29F49D7BFBBBC0339A0B23 /* YamlError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA7656F7BF4FAD0A42B8A908141837 /* YamlError.swift */; };
+		CEF20913F084B7BBA85CAB138D64FC76 /* library_wrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876690BBC6C55F165F22EAD9DB004499 /* library_wrapper.swift */; };
+		CF700065475EED366B9831088833108C /* Clang_C.h in Headers */ = {isa = PBXBuildFile; fileRef = DE58ED072C5245EB8563BF70023865CA /* Clang_C.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1CCD31A38422C9918556525692E8EF5 /* Dot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D76AFF6CC67BD47EDC3E7EE6BE0619D4 /* Dot.swift */; };
+		D266FBFFA1DDF40F8DD94BE782E1A43F /* ClangTranslationUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6A4D20642C4427A143D43D1AD0D2B0 /* ClangTranslationUnit.swift */; };
+		D294A43F47893AA658F53E7B94675417 /* sourcekitd.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C41909094A0E8B2A7609317B1775560 /* sourcekitd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4A691DE8FAD2E7A5E5D529AF52FD87B /* Dictionary+Merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544861F25444B058EBD287E20D606398 /* Dictionary+Merge.swift */; };
+		D8CDC0280065C0DD7CE59868EFBB2CE2 /* parser.c in Sources */ = {isa = PBXBuildFile; fileRef = 8BBDC1F8B211A0179BD9881B15783D46 /* parser.c */; };
+		D94CE32F396CF871E1156EDDC0EF7406 /* Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AB4714D32C52B0B9416A3C319FFC3B /* Encoder.swift */; };
+		DA088319F98878DCFFA4F303F8F8AD12 /* shim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1D28B4B891F4F1C26197880871FFBC /* shim.swift */; };
+		DAF517592E56B3BF2AFA4A251670A5FF /* Documentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444DCE8C8379A2A09AD1A20C687DCA4A /* Documentation.swift */; };
+		E2A7105452BAD772A19841B3EB28F93B /* SourceKittenFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC7A2B40F08A029B134DE776833EDE1 /* SourceKittenFramework-dummy.m */; };
+		E31B802BFA9D7030F81B051348190B22 /* CodeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523281B2AF49BDD62CA68E05226DC7B2 /* CodeNode.swift */; };
+		E3608583942FED2892D2A0BE6D4AF06E /* Node.Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE5DDEF291E0776C46952A7B2502146 /* Node.Mapping.swift */; };
+		E42873C73EB62306E57DB1154401A410 /* LinuxCompatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52725947FF90CDBE73633934802C21F1 /* LinuxCompatibility.swift */; };
+		E49171C7333F2A82CA87173C66927BC9 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D164BDD5F52A061BD1A643944AF89482 /* Tag.swift */; };
+		E5BBF704D97ABD7B3D7A4A4891C5636E /* SWXMLHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00FDA99996C472FA353F94E65398F8BC /* SWXMLHash.framework */; };
+		EC8972176257200A44C1735E564ADA46 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF4C18AD1A4C6AF2C3AD565105C6BD1 /* Text.swift */; };
+		EEB45CD3CF7EDA3CB18C0A424EB9D648 /* SWXMLHash-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0686F0708C1C16FE32C0C0ED07BEBF4E /* SWXMLHash-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF0964D3E8EAC3789F6C98521194E04B /* Structure.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9991F2DAF1C874D85EF5AFB042679CE /* Structure.swift */; };
+		F0CAF2284466061D8C1FC3294E4991EC /* FlowGraphDotConverterCore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 01CEE58343CF82845E26215769575568 /* FlowGraphDotConverterCore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F164E6069F014CE7BF5F01A03EE01AFB /* Representer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10352671D97EBD9F97FFEBD663924CA6 /* Representer.swift */; };
+		F303CB0F0B8FE5D5EDA20FFDE26057B6 /* yaml.h in Headers */ = {isa = PBXBuildFile; fileRef = F191EC80DCB572A6B3723D8BDD110778 /* yaml.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3792804699433B9F75B8307D02386DE /* Node.Scalar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0107DC27DE8288C597CFAF56691C26 /* Node.Scalar.swift */; };
+		F47C0E534141AF427E315488B23C2171 /* CodeSyntaxMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC5F1B38C37F727390CC302448D25A9 /* CodeSyntaxMap.swift */; };
+		F69E9DCA3317BD08FE518F1CAFE29640 /* scanner.c in Sources */ = {isa = PBXBuildFile; fileRef = 6B62C7441E036E43F3578D48AA9C3E96 /* scanner.c */; };
+		F81530240EE87B83316E3C6BEAE1EF9D /* Mark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E010C91A8538D7EED1BD8C957F3F58A /* Mark.swift */; };
+		FAE5F4E0B2C179325C6650359EF9582B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E200AAF8E3EA27EC024DAB55F2D715A /* Cocoa.framework */; };
+		FF5005781DF2F936D248521A8CE3A35E /* BuildSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 92162C0EF44C1E8A310A77CAB082FF6A /* BuildSystem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF95232A94AF4E2D6A9D583C775A638E /* SwiftDeclarationKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944FCC764F6D87BF7824A94227D79CD0 /* SwiftDeclarationKind.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1EB3F0E718833FEF146F87037BF0BD1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 780ED589F4B15F96EFCCD70E7DB978D6;
+			remoteInfo = SWXMLHash;
+		};
+		314C629D51969F26B5B838B7B6AB9F54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB9500CE119A5E6E1051A94CA5D251E8;
+			remoteInfo = FlowGraph;
+		};
+		32CBAC60531E51BA504543FD65D6389D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC2F8E269F290AEF40956D8CC336B9BB;
+			remoteInfo = SourceKittenFramework;
+		};
+		730FC6143A02BE30CC0C6A2C8E124711 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB47F5B910425E54285117152ADA9B14;
+			remoteInfo = Yams;
+		};
+		824A206F6713A19F44B1703EA8A8B685 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB47F5B910425E54285117152ADA9B14;
+			remoteInfo = Yams;
+		};
+		ABFE8C52508AC426811DADF816FDCDFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7672F0C4A88DCECA3A1FEB60BC4D21E8;
+			remoteInfo = FlowGraphDotConverterCore;
+		};
+		C5E679F6C1B1EB022FF7AE65C80DE8E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB9500CE119A5E6E1051A94CA5D251E8;
+			remoteInfo = FlowGraph;
+		};
+		E958FB869501A7057D003AEED30B4D42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC2F8E269F290AEF40956D8CC336B9BB;
+			remoteInfo = SourceKittenFramework;
+		};
+		FE47501B0EC911F8D45A61D257606F51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 780ED589F4B15F96EFCCD70E7DB978D6;
+			remoteInfo = SWXMLHash;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00FDA99996C472FA353F94E65398F8BC /* SWXMLHash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SWXMLHash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		01861A24130EAE685F5D639753606322 /* SWXMLHash-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWXMLHash-prefix.pch"; sourceTree = "<group>"; };
+		01CEE58343CF82845E26215769575568 /* FlowGraphDotConverterCore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlowGraphDotConverterCore-umbrella.h"; sourceTree = "<group>"; };
+		03CD22A0F02E82BD657504086D97E6B4 /* CodeScanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodeScanner.swift; path = Sources/FlowGraphDotConverterCore/CodeScanner.swift; sourceTree = "<group>"; };
+		0686F0708C1C16FE32C0C0ED07BEBF4E /* SWXMLHash-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWXMLHash-umbrella.h"; sourceTree = "<group>"; };
+		0829E732AF00F41AEC150B6A947E4C0B /* FlowGraph.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlowGraph.xcconfig; sourceTree = "<group>"; };
+		0B26D8ECD5AE3D70106CE988CFF0F888 /* Parser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parser.swift; path = Sources/Yams/Parser.swift; sourceTree = "<group>"; };
+		0BE5DDEF291E0776C46952A7B2502146 /* Node.Mapping.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.Mapping.swift; path = Sources/Yams/Node.Mapping.swift; sourceTree = "<group>"; };
+		0C26695087CEC8233C76A46447AF4F03 /* Pods-FlowGraphViewer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FlowGraphViewer.modulemap"; sourceTree = "<group>"; };
+		10352671D97EBD9F97FFEBD663924CA6 /* Representer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Representer.swift; path = Sources/Yams/Representer.swift; sourceTree = "<group>"; };
+		19BC31BD2ACC5E81A3C3D23E0F040431 /* SWXMLHash.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SWXMLHash.swift; path = Source/SWXMLHash.swift; sourceTree = "<group>"; };
+		1C540F1661E7A1D58C9E0220B6BE0008 /* Yams.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Yams.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C7BC953981B81FB48AD45CEDE17B1D4 /* FlowGraph.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlowGraph.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D357F5FC1E0C9C172CBB9FDBB16D0FD /* SyntaxMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SyntaxMap.swift; path = Source/SourceKittenFramework/SyntaxMap.swift; sourceTree = "<group>"; };
+		1DC307D7BAB96D9E8757F95479ED0F0F /* library_wrapper_sourcekitd.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = library_wrapper_sourcekitd.swift; path = Source/SourceKittenFramework/library_wrapper_sourcekitd.swift; sourceTree = "<group>"; };
+		1E3150150EFABE77008193D19B1D4B85 /* FlowGraphDotConverterCore-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FlowGraphDotConverterCore-Info.plist"; sourceTree = "<group>"; };
+		1FC850B4B51C6B5440466637882B5071 /* FlowGraphDotConverterCore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FlowGraphDotConverterCore-dummy.m"; sourceTree = "<group>"; };
+		27AB4714D32C52B0B9416A3C319FFC3B /* Encoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Encoder.swift; path = Sources/Yams/Encoder.swift; sourceTree = "<group>"; };
+		2A204DC09654D4A061DEB475E13EA72A /* StatementKind.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StatementKind.swift; path = Source/SourceKittenFramework/StatementKind.swift; sourceTree = "<group>"; };
+		2A8AAD7A21E2D126F5D519F6B8F5EF77 /* SwiftDocs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftDocs.swift; path = Source/SourceKittenFramework/SwiftDocs.swift; sourceTree = "<group>"; };
+		2AC5F1B38C37F727390CC302448D25A9 /* CodeSyntaxMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodeSyntaxMap.swift; path = Sources/FlowGraphDotConverterCore/CodeSyntaxMap.swift; sourceTree = "<group>"; };
+		2B01070B3D8F43C8CCCD45DA86377BE5 /* Decoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Decoder.swift; path = Sources/Yams/Decoder.swift; sourceTree = "<group>"; };
+		2BD06FB6233C2655BD71F8800A029486 /* SourceKittenFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SourceKittenFramework.framework; path = SourceKittenFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F8C70DEA6260F0EFC8CC472EB52F8C4 /* Yams-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Yams-umbrella.h"; sourceTree = "<group>"; };
+		2FCA72AA01E143EC61675F8B375313D8 /* SourceKittenFramework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SourceKittenFramework.xcconfig; sourceTree = "<group>"; };
+		315A0F58335E6FCD2B9DF69D81FD7543 /* CXString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXString.h; path = Source/Clang_C/include/CXString.h; sourceTree = "<group>"; };
+		317E4029CB1A35F875C27AE6A1921094 /* FlowGraphScanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlowGraphScanner.swift; path = Sources/FlowGraphDotConverterCore/FlowGraphScanner.swift; sourceTree = "<group>"; };
+		36C196F61D6356FBFAFAB84A85B5A51E /* FlowGraph.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FlowGraph.modulemap; sourceTree = "<group>"; };
+		3A3805E7FA2F939FA3DCDC32D0FF81D7 /* Yams.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Yams.modulemap; sourceTree = "<group>"; };
+		3A85333A135DC165098B8F8A77D11E88 /* Pods-FlowGraphViewer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FlowGraphViewer-dummy.m"; sourceTree = "<group>"; };
+		3A9A14EEE99F355C4987028ABF3D29D6 /* SyntaxKind.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SyntaxKind.swift; path = Source/SourceKittenFramework/SyntaxKind.swift; sourceTree = "<group>"; };
+		3AD2F156E64071427A6D3C8F514F95A0 /* Yams-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Yams-prefix.pch"; sourceTree = "<group>"; };
+		3BED132A2CDE85EF32DDAC6C574134E5 /* SWXMLHash-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SWXMLHash-Info.plist"; sourceTree = "<group>"; };
+		3E200AAF8E3EA27EC024DAB55F2D715A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		3EB65B929A90AE7110A769AB3FD348D6 /* Documentation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Documentation.h; path = Source/Clang_C/include/Documentation.h; sourceTree = "<group>"; };
+		40CA7656F7BF4FAD0A42B8A908141837 /* YamlError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = YamlError.swift; path = Sources/Yams/YamlError.swift; sourceTree = "<group>"; };
+		418270A5D29D5877C963764C93B9F88F /* Node.Sequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.Sequence.swift; path = Sources/Yams/Node.Sequence.swift; sourceTree = "<group>"; };
+		444DCE8C8379A2A09AD1A20C687DCA4A /* Documentation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Documentation.swift; path = Source/SourceKittenFramework/Documentation.swift; sourceTree = "<group>"; };
+		48B3F7CCB2412EB074637BF694D36A14 /* FlowGraphDotConverterCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FlowGraphDotConverterCore.framework; path = FlowGraphDotConverterCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49663FD007DEB1397A23021B796210F6 /* FlowGraph-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlowGraph-prefix.pch"; sourceTree = "<group>"; };
+		4DE4DBCEF98ED324AC15A193E64DDC3B /* CXCompilationDatabase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXCompilationDatabase.h; path = Source/Clang_C/include/CXCompilationDatabase.h; sourceTree = "<group>"; };
+		4F064DB1F5985D05F9D7A1AC066293F0 /* CodeStructure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodeStructure.swift; path = Sources/FlowGraphDotConverterCore/CodeStructure.swift; sourceTree = "<group>"; };
+		50B741E6DBFB8471A16ADD9DAACB4D69 /* Resolver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resolver.swift; path = Sources/Yams/Resolver.swift; sourceTree = "<group>"; };
+		5222592289671D6C925AAE02473EAB2D /* SourceKittenFramework-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SourceKittenFramework-prefix.pch"; sourceTree = "<group>"; };
+		523281B2AF49BDD62CA68E05226DC7B2 /* CodeNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodeNode.swift; path = Sources/FlowGraphDotConverterCore/CodeNode.swift; sourceTree = "<group>"; };
+		52725947FF90CDBE73633934802C21F1 /* LinuxCompatibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LinuxCompatibility.swift; path = Source/SourceKittenFramework/LinuxCompatibility.swift; sourceTree = "<group>"; };
+		544861F25444B058EBD287E20D606398 /* Dictionary+Merge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dictionary+Merge.swift"; path = "Source/SourceKittenFramework/Dictionary+Merge.swift"; sourceTree = "<group>"; };
+		57FE0437EC59DA16BFC23CDE125287DF /* OffsetMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OffsetMap.swift; path = Source/SourceKittenFramework/OffsetMap.swift; sourceTree = "<group>"; };
+		587BDD20299DF52294C6235113BE6E3F /* SourceLocation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SourceLocation.swift; path = Source/SourceKittenFramework/SourceLocation.swift; sourceTree = "<group>"; };
+		598D8D80230FBF16CFB91A43E438F9E8 /* ObjCDeclarationKind.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjCDeclarationKind.swift; path = Source/SourceKittenFramework/ObjCDeclarationKind.swift; sourceTree = "<group>"; };
+		59A0B01F410B19D4CB559B4986008FE8 /* Language.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Language.swift; path = Source/SourceKittenFramework/Language.swift; sourceTree = "<group>"; };
+		59E4874A30D945E34AD0D95C2818229D /* Yams-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Yams-Info.plist"; sourceTree = "<group>"; };
+		5C41909094A0E8B2A7609317B1775560 /* sourcekitd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sourcekitd.h; path = Source/SourceKit/include/sourcekitd.h; sourceTree = "<group>"; };
+		5CDF5BB5E860F2B4DD1458ADC9677C57 /* emitter.c */ = {isa = PBXFileReference; includeInIndex = 1; name = emitter.c; path = Sources/CYaml/src/emitter.c; sourceTree = "<group>"; };
+		5CF428BF934AF8C57BB733736E22A279 /* SourceKittenFramework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SourceKittenFramework-umbrella.h"; sourceTree = "<group>"; };
+		5EB7074AE97F315D9A9C2A01A9D223CD /* CXErrorCode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CXErrorCode.h; path = Source/Clang_C/include/CXErrorCode.h; sourceTree = "<group>"; };
+		643A4D64B67C088E3688C8F5FCBC2C8F /* FlowGraph-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlowGraph-umbrella.h"; sourceTree = "<group>"; };
+		64580A582C1ABF6ADB2289BDB5F13A97 /* Pods-FlowGraphViewer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlowGraphViewer-acknowledgements.plist"; sourceTree = "<group>"; };
+		6743EB4E977A3FA83F07FEB1B826C1F2 /* Yams.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Yams.xcconfig; sourceTree = "<group>"; };
+		675169AB1C46CC6D1EC0697E3D94585B /* SourceKitObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SourceKitObject.swift; path = Source/SourceKittenFramework/SourceKitObject.swift; sourceTree = "<group>"; };
+		67D027C8BD37AE061994F21B918DAD95 /* SWXMLHash.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SWXMLHash.modulemap; sourceTree = "<group>"; };
+		6B62C7441E036E43F3578D48AA9C3E96 /* scanner.c */ = {isa = PBXFileReference; includeInIndex = 1; name = scanner.c; path = Sources/CYaml/src/scanner.c; sourceTree = "<group>"; };
+		6C1246444E08CF631C4A4D6AAC7E9818 /* Index.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Index.h; path = Source/Clang_C/include/Index.h; sourceTree = "<group>"; };
+		70B3A663EACBE3DA510FAABB176368A3 /* FlowGraphInitialState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlowGraphInitialState.swift; path = Sources/FlowGraphDotConverterCore/FlowGraphInitialState.swift; sourceTree = "<group>"; };
+		77522F2A4636360B292A548E1DD76F0B /* String+Yams.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Yams.swift"; path = "Sources/Yams/String+Yams.swift"; sourceTree = "<group>"; };
+		794C9E8DE91281DABD41BE6C8FA9AFD7 /* Constructor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constructor.swift; path = Sources/Yams/Constructor.swift; sourceTree = "<group>"; };
+		7A4AD56AF0D1E29211624E3BB9DDF395 /* CYaml.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CYaml.h; path = Sources/CYaml/include/CYaml.h; sourceTree = "<group>"; };
+		8039064281A528BE159C1C8DAD4440A2 /* SourceKittenFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SourceKittenFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80D3C8FBD3AD1BDA2BF42B3E63892044 /* Node.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.swift; path = Sources/Yams/Node.swift; sourceTree = "<group>"; };
+		820555A947B04D5D472541990E24E13D /* Pods-FlowGraphViewer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlowGraphViewer-Info.plist"; sourceTree = "<group>"; };
+		828A895D40FF48645474CAA0F9AED0C3 /* Emitter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Emitter.swift; path = Sources/Yams/Emitter.swift; sourceTree = "<group>"; };
+		876690BBC6C55F165F22EAD9DB004499 /* library_wrapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = library_wrapper.swift; path = Source/SourceKittenFramework/library_wrapper.swift; sourceTree = "<group>"; };
+		8B1D28B4B891F4F1C26197880871FFBC /* shim.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = shim.swift; path = Source/shim.swift; sourceTree = "<group>"; };
+		8B6A4D20642C4427A143D43D1AD0D2B0 /* ClangTranslationUnit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClangTranslationUnit.swift; path = Source/SourceKittenFramework/ClangTranslationUnit.swift; sourceTree = "<group>"; };
+		8BBDC1F8B211A0179BD9881B15783D46 /* parser.c */ = {isa = PBXFileReference; includeInIndex = 1; name = parser.c; path = Sources/CYaml/src/parser.c; sourceTree = "<group>"; };
+		8CC5ACE2CC0FEECC74E2C059E10587E1 /* FlowGraphNextState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlowGraphNextState.swift; path = Sources/FlowGraphDotConverterCore/FlowGraphNextState.swift; sourceTree = "<group>"; };
+		8E3A7737AC7ED49393AE00D1469C9E1D /* SWXMLHash-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SWXMLHash-dummy.m"; sourceTree = "<group>"; };
+		8EC7A2B40F08A029B134DE776833EDE1 /* SourceKittenFramework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SourceKittenFramework-dummy.m"; sourceTree = "<group>"; };
+		92162C0EF44C1E8A310A77CAB082FF6A /* BuildSystem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BuildSystem.h; path = Source/Clang_C/include/BuildSystem.h; sourceTree = "<group>"; };
+		93D208EE8FBACE3D30E2DBB181568457 /* SwiftDeclarationAttributeKind.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftDeclarationAttributeKind.swift; path = Source/SourceKittenFramework/SwiftDeclarationAttributeKind.swift; sourceTree = "<group>"; };
+		944FCC764F6D87BF7824A94227D79CD0 /* SwiftDeclarationKind.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftDeclarationKind.swift; path = Source/SourceKittenFramework/SwiftDeclarationKind.swift; sourceTree = "<group>"; };
+		949D323BB896437466A48B4CCBE83570 /* Platform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Platform.h; path = Source/Clang_C/include/Platform.h; sourceTree = "<group>"; };
+		9ACBA6EBAC62CFE0D7B41B3B61F5C901 /* CodeCompletionItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodeCompletionItem.swift; path = Source/SourceKittenFramework/CodeCompletionItem.swift; sourceTree = "<group>"; };
+		9E010C91A8538D7EED1BD8C957F3F58A /* Mark.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mark.swift; path = Sources/Yams/Mark.swift; sourceTree = "<group>"; };
+		A23961E70C87F740939FA1C766D9AC02 /* File.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = File.swift; path = Source/SourceKittenFramework/File.swift; sourceTree = "<group>"; };
+		A50CF19955AE82F3566100D3B33C6461 /* Yams-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Yams-dummy.m"; sourceTree = "<group>"; };
+		A65687D7E893AA985715047B47B7FCD2 /* SwiftExprKind.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftExprKind.swift; path = Sources/FlowGraphDotConverterCore/SwiftExprKind.swift; sourceTree = "<group>"; };
+		A7CEC83DF279647CFAD4CAB8DECFB74E /* SyntaxToken.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SyntaxToken.swift; path = Source/SourceKittenFramework/SyntaxToken.swift; sourceTree = "<group>"; };
+		A93B5018F98F67472A8D803B21AC8B35 /* reader.c */ = {isa = PBXFileReference; includeInIndex = 1; name = reader.c; path = Sources/CYaml/src/reader.c; sourceTree = "<group>"; };
+		AE0107DC27DE8288C597CFAF56691C26 /* Node.Scalar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.Scalar.swift; path = Sources/Yams/Node.Scalar.swift; sourceTree = "<group>"; };
+		AF970BBDB654E229A35383866F1A83AA /* String+SourceKitten.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+SourceKitten.swift"; path = "Source/SourceKittenFramework/String+SourceKitten.swift"; sourceTree = "<group>"; };
+		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B48D4F95B8B951462DE69219137D0D79 /* SourceDeclaration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SourceDeclaration.swift; path = Source/SourceKittenFramework/SourceDeclaration.swift; sourceTree = "<group>"; };
+		B4FA74EE19253A06A98601AC691A1C9F /* shim.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = shim.swift; path = Sources/Yams/shim.swift; sourceTree = "<group>"; };
+		B575C2C58473B4D76642B834AC583655 /* yaml_private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = yaml_private.h; path = Sources/CYaml/src/yaml_private.h; sourceTree = "<group>"; };
+		B6F529661205ECD0D9D591A7F63D5732 /* FlowGraphDotConverter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlowGraphDotConverter.swift; path = Sources/FlowGraphDotConverterCore/FlowGraphDotConverter.swift; sourceTree = "<group>"; };
+		BBD4DDF7EF65090C2181196A36366975 /* shim.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = shim.swift; path = Source/SourceKittenFramework/shim.swift; sourceTree = "<group>"; };
+		BCA0851DC8DE250F188F220C394C0A8A /* Yams.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Yams.framework; path = Yams.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFB3AC90D8F3149A3E742591F94D9C0D /* Version.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Version.swift; path = Source/SourceKittenFramework/Version.swift; sourceTree = "<group>"; };
+		C18E59EC5D7691309BA6BC6EDADA26A3 /* Clang+SourceKitten.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Clang+SourceKitten.swift"; path = "Source/SourceKittenFramework/Clang+SourceKitten.swift"; sourceTree = "<group>"; };
+		C6133F4760D916AEBCDF3014923B3EA8 /* FlowGraphInstance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlowGraphInstance.swift; path = Sources/FlowGraphDotConverterCore/FlowGraphInstance.swift; sourceTree = "<group>"; };
+		C6229C836B11B94C01345324A74F644F /* CodeBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodeBase.swift; path = Sources/FlowGraphDotConverterCore/CodeBase.swift; sourceTree = "<group>"; };
+		C6B96C2E5C3A154C6DF47F25FE4CB1AC /* FlowGraph.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FlowGraph.framework; path = FlowGraph.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7B6CC8721FD1A746744111CA305E700 /* Yams.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Yams.h; path = Sources/Yams/Yams.h; sourceTree = "<group>"; };
+		CBA117BBF1ABF0002511AF0E688C7668 /* SourceKittenFramework-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SourceKittenFramework-Info.plist"; sourceTree = "<group>"; };
+		CDFE41BBC69117D2B0CFAC4FE9FA6662 /* writer.c */ = {isa = PBXFileReference; includeInIndex = 1; name = writer.c; path = Sources/CYaml/src/writer.c; sourceTree = "<group>"; };
+		CF6D2AC4ED2DF592E5F406CFD3088928 /* FlowGraphDotConverterCore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlowGraphDotConverterCore.xcconfig; sourceTree = "<group>"; };
+		D164BDD5F52A061BD1A643944AF89482 /* Tag.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tag.swift; path = Sources/Yams/Tag.swift; sourceTree = "<group>"; };
+		D43E7D8378730E99941B45784323B4E0 /* Pods-FlowGraphViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlowGraphViewer.release.xcconfig"; sourceTree = "<group>"; };
+		D4A7A7F0FC902F50CF8595529B20A171 /* api.c */ = {isa = PBXFileReference; includeInIndex = 1; name = api.c; path = Sources/CYaml/src/api.c; sourceTree = "<group>"; };
+		D76AFF6CC67BD47EDC3E7EE6BE0619D4 /* Dot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dot.swift; path = Sources/FlowGraphDotConverterCore/Dot.swift; sourceTree = "<group>"; };
+		D944E981D56EB8684E66EF5FFFCDA8D0 /* SWXMLHash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SWXMLHash.framework; path = SWXMLHash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DABEDA1167604D2A7772F73948C89FD7 /* FlowGraph.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlowGraph.swift; path = FlowGraph/FlowGraph.swift; sourceTree = "<group>"; };
+		DB19794598381090CA56318714B8F76A /* Pods-FlowGraphViewer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FlowGraphViewer-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DBF5CAEE8E790A109E5B05C545D90D8C /* Pods-FlowGraphViewer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FlowGraphViewer-umbrella.h"; sourceTree = "<group>"; };
+		DDEF45C1B85CD19D2CD4B72BB3DD62FB /* Xcode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Xcode.swift; path = Source/SourceKittenFramework/Xcode.swift; sourceTree = "<group>"; };
+		DE58ED072C5245EB8563BF70023865CA /* Clang_C.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Clang_C.h; path = Source/Clang_C/include/Clang_C.h; sourceTree = "<group>"; };
+		E2DBF7F2F72351A9EF447EF9C4F167B5 /* SourceKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SourceKit.h; path = Source/SourceKit/include/SourceKit.h; sourceTree = "<group>"; };
+		E30577367F76710F3F639DFDF5DBA48E /* library_wrapper_Index.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = library_wrapper_Index.swift; path = Source/SourceKittenFramework/library_wrapper_Index.swift; sourceTree = "<group>"; };
+		E35E69EA4155DC04D940CCF0F431F4B1 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/SourceKittenFramework/Request.swift; sourceTree = "<group>"; };
+		E3AFF920BE47774890F8EBCF690A0179 /* SWXMLHash.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SWXMLHash.xcconfig; sourceTree = "<group>"; };
+		E502124D066F9F14E2104F7D5EF9975C /* FlowGraphDotConverterCore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlowGraphDotConverterCore-prefix.pch"; sourceTree = "<group>"; };
+		E644DB0D09FF097C8C2C4F4D82ACA69A /* library_wrapper_CXString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = library_wrapper_CXString.swift; path = Source/SourceKittenFramework/library_wrapper_CXString.swift; sourceTree = "<group>"; };
+		EAAA7009B1266DEF9DCC2BCB2A67088E /* FlowGraph-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FlowGraph-dummy.m"; sourceTree = "<group>"; };
+		EAD25B5640569A99ACCA24A513B5CE69 /* Parameter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parameter.swift; path = Source/SourceKittenFramework/Parameter.swift; sourceTree = "<group>"; };
+		EB3590E96BC73EB9B1F926336672FB5C /* Pods_FlowGraphViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FlowGraphViewer.framework; path = "Pods-FlowGraphViewer.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB989D658FF68D036240EE597799F0D1 /* JSONOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONOutput.swift; path = Source/SourceKittenFramework/JSONOutput.swift; sourceTree = "<group>"; };
+		EBEC6312692DCCAD0510E7F9174270AA /* library_wrapper_Documentation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = library_wrapper_Documentation.swift; path = Source/SourceKittenFramework/library_wrapper_Documentation.swift; sourceTree = "<group>"; };
+		ECF4C18AD1A4C6AF2C3AD565105C6BD1 /* Text.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Text.swift; path = Source/SourceKittenFramework/Text.swift; sourceTree = "<group>"; };
+		EFEB4459B53A10405AA42B7BC0592325 /* FlowGraph-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FlowGraph-Info.plist"; sourceTree = "<group>"; };
+		F191EC80DCB572A6B3723D8BDD110778 /* yaml.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = yaml.h; path = Sources/CYaml/include/yaml.h; sourceTree = "<group>"; };
+		F3C5B7A6D9CD484629EEDC4B472F9BC3 /* FlowGraphState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlowGraphState.swift; path = Sources/FlowGraphDotConverterCore/FlowGraphState.swift; sourceTree = "<group>"; };
+		F40AC4A26F1ED2233FCC374B9CB98B01 /* Pods-FlowGraphViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlowGraphViewer.debug.xcconfig"; sourceTree = "<group>"; };
+		F4E9A5F24DDA58B01DC0CE3F7DF36379 /* SwiftDocKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftDocKey.swift; path = Source/SourceKittenFramework/SwiftDocKey.swift; sourceTree = "<group>"; };
+		F649AD0BB2025AC2106194F228A42C07 /* Module.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Module.swift; path = Source/SourceKittenFramework/Module.swift; sourceTree = "<group>"; };
+		F6BF9FC45A83262DD6A3B01A63AD943F /* UID.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UID.swift; path = Source/SourceKittenFramework/UID.swift; sourceTree = "<group>"; };
+		F8E61EAD71D90CDF02BE80E5EA4CAF6D /* FlowGraphDotConverterCore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FlowGraphDotConverterCore.modulemap; sourceTree = "<group>"; };
+		F9991F2DAF1C874D85EF5AFB042679CE /* Structure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Structure.swift; path = Source/SourceKittenFramework/Structure.swift; sourceTree = "<group>"; };
+		FA7080DAEB67890199843159E81AE069 /* SWXMLHash+TypeConversion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SWXMLHash+TypeConversion.swift"; path = "Source/SWXMLHash+TypeConversion.swift"; sourceTree = "<group>"; };
+		FDAD74CDC327A31701710F6D2DF1266A /* SourceKittenFramework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SourceKittenFramework.modulemap; sourceTree = "<group>"; };
+		FED4837F641583BDD6BFA03EB4DCC7B7 /* Pods-FlowGraphViewer-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FlowGraphViewer-frameworks.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B12F7AA71122C1453AED9C9F2E99F7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				867A47459DD752CFCAECD3EE77A2C1D9 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A304E7BCD6A05774E652680548D8335 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5D70672F30DBE9B0CA8278D0CF7718B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A83C8867834FABEC9BDC3AAA23447F0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EA5EEF56E44981F2231B5F94936ED20 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0C2DF015F78BF86C49B7028B2B2A2BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAE5F4E0B2C179325C6650359EF9582B /* Cocoa.framework in Frameworks */,
+				729D472B46981CF4E6BC91FD863B9F1B /* FlowGraph.framework in Frameworks */,
+				C1B857FE788F301F7BE6AEE884AB2A99 /* SourceKittenFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7AA8B860621A50682D34BE439921AC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				135A94831F6B815C03DD1F42FD38CB88 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC0493D64EFA81D01C3120C8BEC4E7AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3341676B84C0E939CB68CB6BDF2F9508 /* Cocoa.framework in Frameworks */,
+				E5BBF704D97ABD7B3D7A4A4891C5636E /* SWXMLHash.framework in Frameworks */,
+				611A1D89CB01B754A38ED78D415CB697 /* Yams.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12395AF72E46AD042D8941AC89F64677 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				67D027C8BD37AE061994F21B918DAD95 /* SWXMLHash.modulemap */,
+				E3AFF920BE47774890F8EBCF690A0179 /* SWXMLHash.xcconfig */,
+				8E3A7737AC7ED49393AE00D1469C9E1D /* SWXMLHash-dummy.m */,
+				3BED132A2CDE85EF32DDAC6C574134E5 /* SWXMLHash-Info.plist */,
+				01861A24130EAE685F5D639753606322 /* SWXMLHash-prefix.pch */,
+				0686F0708C1C16FE32C0C0ED07BEBF4E /* SWXMLHash-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SWXMLHash";
+			sourceTree = "<group>";
+		};
+		208ED6DB6102F66E4E9E3F66C08593A0 /* FlowGraph */ = {
+			isa = PBXGroup;
+			children = (
+				DABEDA1167604D2A7772F73948C89FD7 /* FlowGraph.swift */,
+				26401FD41709865D653229DE54A8EDD4 /* Support Files */,
+			);
+			name = FlowGraph;
+			path = FlowGraph;
+			sourceTree = "<group>";
+		};
+		26401FD41709865D653229DE54A8EDD4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				36C196F61D6356FBFAFAB84A85B5A51E /* FlowGraph.modulemap */,
+				0829E732AF00F41AEC150B6A947E4C0B /* FlowGraph.xcconfig */,
+				EAAA7009B1266DEF9DCC2BCB2A67088E /* FlowGraph-dummy.m */,
+				EFEB4459B53A10405AA42B7BC0592325 /* FlowGraph-Info.plist */,
+				49663FD007DEB1397A23021B796210F6 /* FlowGraph-prefix.pch */,
+				643A4D64B67C088E3688C8F5FCBC2C8F /* FlowGraph-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FlowGraph";
+			sourceTree = "<group>";
+		};
+		3F964EEC222B13B4900E140CDAFBAD71 /* Yams */ = {
+			isa = PBXGroup;
+			children = (
+				D4A7A7F0FC902F50CF8595529B20A171 /* api.c */,
+				794C9E8DE91281DABD41BE6C8FA9AFD7 /* Constructor.swift */,
+				7A4AD56AF0D1E29211624E3BB9DDF395 /* CYaml.h */,
+				2B01070B3D8F43C8CCCD45DA86377BE5 /* Decoder.swift */,
+				5CDF5BB5E860F2B4DD1458ADC9677C57 /* emitter.c */,
+				828A895D40FF48645474CAA0F9AED0C3 /* Emitter.swift */,
+				27AB4714D32C52B0B9416A3C319FFC3B /* Encoder.swift */,
+				9E010C91A8538D7EED1BD8C957F3F58A /* Mark.swift */,
+				80D3C8FBD3AD1BDA2BF42B3E63892044 /* Node.swift */,
+				0BE5DDEF291E0776C46952A7B2502146 /* Node.Mapping.swift */,
+				AE0107DC27DE8288C597CFAF56691C26 /* Node.Scalar.swift */,
+				418270A5D29D5877C963764C93B9F88F /* Node.Sequence.swift */,
+				8BBDC1F8B211A0179BD9881B15783D46 /* parser.c */,
+				0B26D8ECD5AE3D70106CE988CFF0F888 /* Parser.swift */,
+				A93B5018F98F67472A8D803B21AC8B35 /* reader.c */,
+				10352671D97EBD9F97FFEBD663924CA6 /* Representer.swift */,
+				50B741E6DBFB8471A16ADD9DAACB4D69 /* Resolver.swift */,
+				6B62C7441E036E43F3578D48AA9C3E96 /* scanner.c */,
+				B4FA74EE19253A06A98601AC691A1C9F /* shim.swift */,
+				77522F2A4636360B292A548E1DD76F0B /* String+Yams.swift */,
+				D164BDD5F52A061BD1A643944AF89482 /* Tag.swift */,
+				CDFE41BBC69117D2B0CFAC4FE9FA6662 /* writer.c */,
+				F191EC80DCB572A6B3723D8BDD110778 /* yaml.h */,
+				B575C2C58473B4D76642B834AC583655 /* yaml_private.h */,
+				40CA7656F7BF4FAD0A42B8A908141837 /* YamlError.swift */,
+				C7B6CC8721FD1A746744111CA305E700 /* Yams.h */,
+				7F3B2B00346BB2F06D802D6BC4FD1E1A /* Support Files */,
+			);
+			name = Yams;
+			path = Yams;
+			sourceTree = "<group>";
+		};
+		437336BC0BD4F5CD2122C9F26FEDD366 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8E61EAD71D90CDF02BE80E5EA4CAF6D /* FlowGraphDotConverterCore.modulemap */,
+				CF6D2AC4ED2DF592E5F406CFD3088928 /* FlowGraphDotConverterCore.xcconfig */,
+				1FC850B4B51C6B5440466637882B5071 /* FlowGraphDotConverterCore-dummy.m */,
+				1E3150150EFABE77008193D19B1D4B85 /* FlowGraphDotConverterCore-Info.plist */,
+				E502124D066F9F14E2104F7D5EF9975C /* FlowGraphDotConverterCore-prefix.pch */,
+				01CEE58343CF82845E26215769575568 /* FlowGraphDotConverterCore-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FlowGraphDotConverterCore";
+			sourceTree = "<group>";
+		};
+		4CB568075EC5949285E85C08C5570B10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C7BC953981B81FB48AD45CEDE17B1D4 /* FlowGraph.framework */,
+				8039064281A528BE159C1C8DAD4440A2 /* SourceKittenFramework.framework */,
+				00FDA99996C472FA353F94E65398F8BC /* SWXMLHash.framework */,
+				1C540F1661E7A1D58C9E0220B6BE0008 /* Yams.framework */,
+				8B46325357F626C58813AC5E83267EC4 /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6ADC4E8AF90E40338806C545BCF56EE9 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D917FEE7AF3C37919462728A1E64DFED /* Pods-FlowGraphViewer */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */,
+				4CB568075EC5949285E85C08C5570B10 /* Frameworks */,
+				A5731517B8E49599EE2177EF4988CF8F /* Pods */,
+				E6111523DF6EF588EE40EC2876165B20 /* Products */,
+				6ADC4E8AF90E40338806C545BCF56EE9 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7F3B2B00346BB2F06D802D6BC4FD1E1A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A3805E7FA2F939FA3DCDC32D0FF81D7 /* Yams.modulemap */,
+				6743EB4E977A3FA83F07FEB1B826C1F2 /* Yams.xcconfig */,
+				A50CF19955AE82F3566100D3B33C6461 /* Yams-dummy.m */,
+				59E4874A30D945E34AD0D95C2818229D /* Yams-Info.plist */,
+				3AD2F156E64071427A6D3C8F514F95A0 /* Yams-prefix.pch */,
+				2F8C70DEA6260F0EFC8CC472EB52F8C4 /* Yams-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Yams";
+			sourceTree = "<group>";
+		};
+		8B46325357F626C58813AC5E83267EC4 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				3E200AAF8E3EA27EC024DAB55F2D715A /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		A5731517B8E49599EE2177EF4988CF8F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				208ED6DB6102F66E4E9E3F66C08593A0 /* FlowGraph */,
+				E5814C282A2876DBFF85DD4067F4E8A7 /* FlowGraphDotConverterCore */,
+				AB1A58D01075F415520C38B73F877324 /* SourceKittenFramework */,
+				A593192AAE450FCE32083BAA2F79C63C /* SWXMLHash */,
+				3F964EEC222B13B4900E140CDAFBAD71 /* Yams */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A593192AAE450FCE32083BAA2F79C63C /* SWXMLHash */ = {
+			isa = PBXGroup;
+			children = (
+				8B1D28B4B891F4F1C26197880871FFBC /* shim.swift */,
+				19BC31BD2ACC5E81A3C3D23E0F040431 /* SWXMLHash.swift */,
+				FA7080DAEB67890199843159E81AE069 /* SWXMLHash+TypeConversion.swift */,
+				12395AF72E46AD042D8941AC89F64677 /* Support Files */,
+			);
+			name = SWXMLHash;
+			path = SWXMLHash;
+			sourceTree = "<group>";
+		};
+		AB1A58D01075F415520C38B73F877324 /* SourceKittenFramework */ = {
+			isa = PBXGroup;
+			children = (
+				92162C0EF44C1E8A310A77CAB082FF6A /* BuildSystem.h */,
+				C18E59EC5D7691309BA6BC6EDADA26A3 /* Clang+SourceKitten.swift */,
+				DE58ED072C5245EB8563BF70023865CA /* Clang_C.h */,
+				8B6A4D20642C4427A143D43D1AD0D2B0 /* ClangTranslationUnit.swift */,
+				9ACBA6EBAC62CFE0D7B41B3B61F5C901 /* CodeCompletionItem.swift */,
+				4DE4DBCEF98ED324AC15A193E64DDC3B /* CXCompilationDatabase.h */,
+				5EB7074AE97F315D9A9C2A01A9D223CD /* CXErrorCode.h */,
+				315A0F58335E6FCD2B9DF69D81FD7543 /* CXString.h */,
+				544861F25444B058EBD287E20D606398 /* Dictionary+Merge.swift */,
+				3EB65B929A90AE7110A769AB3FD348D6 /* Documentation.h */,
+				444DCE8C8379A2A09AD1A20C687DCA4A /* Documentation.swift */,
+				A23961E70C87F740939FA1C766D9AC02 /* File.swift */,
+				6C1246444E08CF631C4A4D6AAC7E9818 /* Index.h */,
+				EB989D658FF68D036240EE597799F0D1 /* JSONOutput.swift */,
+				59A0B01F410B19D4CB559B4986008FE8 /* Language.swift */,
+				876690BBC6C55F165F22EAD9DB004499 /* library_wrapper.swift */,
+				E644DB0D09FF097C8C2C4F4D82ACA69A /* library_wrapper_CXString.swift */,
+				EBEC6312692DCCAD0510E7F9174270AA /* library_wrapper_Documentation.swift */,
+				E30577367F76710F3F639DFDF5DBA48E /* library_wrapper_Index.swift */,
+				1DC307D7BAB96D9E8757F95479ED0F0F /* library_wrapper_sourcekitd.swift */,
+				52725947FF90CDBE73633934802C21F1 /* LinuxCompatibility.swift */,
+				F649AD0BB2025AC2106194F228A42C07 /* Module.swift */,
+				598D8D80230FBF16CFB91A43E438F9E8 /* ObjCDeclarationKind.swift */,
+				57FE0437EC59DA16BFC23CDE125287DF /* OffsetMap.swift */,
+				EAD25B5640569A99ACCA24A513B5CE69 /* Parameter.swift */,
+				949D323BB896437466A48B4CCBE83570 /* Platform.h */,
+				E35E69EA4155DC04D940CCF0F431F4B1 /* Request.swift */,
+				BBD4DDF7EF65090C2181196A36366975 /* shim.swift */,
+				B48D4F95B8B951462DE69219137D0D79 /* SourceDeclaration.swift */,
+				E2DBF7F2F72351A9EF447EF9C4F167B5 /* SourceKit.h */,
+				5C41909094A0E8B2A7609317B1775560 /* sourcekitd.h */,
+				675169AB1C46CC6D1EC0697E3D94585B /* SourceKitObject.swift */,
+				587BDD20299DF52294C6235113BE6E3F /* SourceLocation.swift */,
+				2A204DC09654D4A061DEB475E13EA72A /* StatementKind.swift */,
+				AF970BBDB654E229A35383866F1A83AA /* String+SourceKitten.swift */,
+				F9991F2DAF1C874D85EF5AFB042679CE /* Structure.swift */,
+				93D208EE8FBACE3D30E2DBB181568457 /* SwiftDeclarationAttributeKind.swift */,
+				944FCC764F6D87BF7824A94227D79CD0 /* SwiftDeclarationKind.swift */,
+				F4E9A5F24DDA58B01DC0CE3F7DF36379 /* SwiftDocKey.swift */,
+				2A8AAD7A21E2D126F5D519F6B8F5EF77 /* SwiftDocs.swift */,
+				3A9A14EEE99F355C4987028ABF3D29D6 /* SyntaxKind.swift */,
+				1D357F5FC1E0C9C172CBB9FDBB16D0FD /* SyntaxMap.swift */,
+				A7CEC83DF279647CFAD4CAB8DECFB74E /* SyntaxToken.swift */,
+				ECF4C18AD1A4C6AF2C3AD565105C6BD1 /* Text.swift */,
+				F6BF9FC45A83262DD6A3B01A63AD943F /* UID.swift */,
+				BFB3AC90D8F3149A3E742591F94D9C0D /* Version.swift */,
+				DDEF45C1B85CD19D2CD4B72BB3DD62FB /* Xcode.swift */,
+				C898EA41290FC15B95437563FEEB2192 /* Support Files */,
+			);
+			name = SourceKittenFramework;
+			path = SourceKittenFramework;
+			sourceTree = "<group>";
+		};
+		C898EA41290FC15B95437563FEEB2192 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FDAD74CDC327A31701710F6D2DF1266A /* SourceKittenFramework.modulemap */,
+				2FCA72AA01E143EC61675F8B375313D8 /* SourceKittenFramework.xcconfig */,
+				8EC7A2B40F08A029B134DE776833EDE1 /* SourceKittenFramework-dummy.m */,
+				CBA117BBF1ABF0002511AF0E688C7668 /* SourceKittenFramework-Info.plist */,
+				5222592289671D6C925AAE02473EAB2D /* SourceKittenFramework-prefix.pch */,
+				5CF428BF934AF8C57BB733736E22A279 /* SourceKittenFramework-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SourceKittenFramework";
+			sourceTree = "<group>";
+		};
+		D917FEE7AF3C37919462728A1E64DFED /* Pods-FlowGraphViewer */ = {
+			isa = PBXGroup;
+			children = (
+				0C26695087CEC8233C76A46447AF4F03 /* Pods-FlowGraphViewer.modulemap */,
+				DB19794598381090CA56318714B8F76A /* Pods-FlowGraphViewer-acknowledgements.markdown */,
+				64580A582C1ABF6ADB2289BDB5F13A97 /* Pods-FlowGraphViewer-acknowledgements.plist */,
+				3A85333A135DC165098B8F8A77D11E88 /* Pods-FlowGraphViewer-dummy.m */,
+				FED4837F641583BDD6BFA03EB4DCC7B7 /* Pods-FlowGraphViewer-frameworks.sh */,
+				820555A947B04D5D472541990E24E13D /* Pods-FlowGraphViewer-Info.plist */,
+				DBF5CAEE8E790A109E5B05C545D90D8C /* Pods-FlowGraphViewer-umbrella.h */,
+				F40AC4A26F1ED2233FCC374B9CB98B01 /* Pods-FlowGraphViewer.debug.xcconfig */,
+				D43E7D8378730E99941B45784323B4E0 /* Pods-FlowGraphViewer.release.xcconfig */,
+			);
+			name = "Pods-FlowGraphViewer";
+			path = "Target Support Files/Pods-FlowGraphViewer";
+			sourceTree = "<group>";
+		};
+		E5814C282A2876DBFF85DD4067F4E8A7 /* FlowGraphDotConverterCore */ = {
+			isa = PBXGroup;
+			children = (
+				C6229C836B11B94C01345324A74F644F /* CodeBase.swift */,
+				523281B2AF49BDD62CA68E05226DC7B2 /* CodeNode.swift */,
+				03CD22A0F02E82BD657504086D97E6B4 /* CodeScanner.swift */,
+				4F064DB1F5985D05F9D7A1AC066293F0 /* CodeStructure.swift */,
+				2AC5F1B38C37F727390CC302448D25A9 /* CodeSyntaxMap.swift */,
+				D76AFF6CC67BD47EDC3E7EE6BE0619D4 /* Dot.swift */,
+				B6F529661205ECD0D9D591A7F63D5732 /* FlowGraphDotConverter.swift */,
+				70B3A663EACBE3DA510FAABB176368A3 /* FlowGraphInitialState.swift */,
+				C6133F4760D916AEBCDF3014923B3EA8 /* FlowGraphInstance.swift */,
+				8CC5ACE2CC0FEECC74E2C059E10587E1 /* FlowGraphNextState.swift */,
+				317E4029CB1A35F875C27AE6A1921094 /* FlowGraphScanner.swift */,
+				F3C5B7A6D9CD484629EEDC4B472F9BC3 /* FlowGraphState.swift */,
+				A65687D7E893AA985715047B47B7FCD2 /* SwiftExprKind.swift */,
+				437336BC0BD4F5CD2122C9F26FEDD366 /* Support Files */,
+			);
+			name = FlowGraphDotConverterCore;
+			path = FlowGraphDotConverterCore;
+			sourceTree = "<group>";
+		};
+		E6111523DF6EF588EE40EC2876165B20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6B96C2E5C3A154C6DF47F25FE4CB1AC /* FlowGraph.framework */,
+				48B3F7CCB2412EB074637BF694D36A14 /* FlowGraphDotConverterCore.framework */,
+				EB3590E96BC73EB9B1F926336672FB5C /* Pods_FlowGraphViewer.framework */,
+				2BD06FB6233C2655BD71F8800A029486 /* SourceKittenFramework.framework */,
+				D944E981D56EB8684E66EF5FFFCDA8D0 /* SWXMLHash.framework */,
+				BCA0851DC8DE250F188F220C394C0A8A /* Yams.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		049356DE10DB4F25837514EC93AE3311 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D7DCD5B54A2C8D89140BA26B7CA8F43 /* FlowGraph-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E1B333DE24E495557F9A7E91DABBB8F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3CC2887DDFE15AC599A96361AF5BFA4 /* Pods-FlowGraphViewer-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36C2741C65A0C0BFEA5E8DC126740045 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0CAF2284466061D8C1FC3294E4991EC /* FlowGraphDotConverterCore-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43556F5F6EA0E42DCEE88EA53137F5EC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DF899EBA6A9433047D45F88B61A653F /* CYaml.h in Headers */,
+				F303CB0F0B8FE5D5EDA20FFDE26057B6 /* yaml.h in Headers */,
+				8D66121F3A8D5EDEC6BA1C360FD3AA4A /* yaml_private.h in Headers */,
+				60D28C23F18D6E9CFCD81B26355BCCF3 /* Yams-umbrella.h in Headers */,
+				0D3CCDAAD136D6390DD1E99F0F823E8D /* Yams.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E0740DE84DEB9A8B3FDA3CCE8986E5E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF5005781DF2F936D248521A8CE3A35E /* BuildSystem.h in Headers */,
+				CF700065475EED366B9831088833108C /* Clang_C.h in Headers */,
+				2275AAF8B4A97CC946C657E5D8BE9F8D /* CXCompilationDatabase.h in Headers */,
+				4DBD0566770E1BDF65348C22D60BE811 /* CXErrorCode.h in Headers */,
+				3C78CF93AFD21B366289A13ED80C6374 /* CXString.h in Headers */,
+				9037563957E3AAFE0705C5975780CC0E /* Documentation.h in Headers */,
+				A0BFC496E07917CF3647B2CCD8A637B8 /* Index.h in Headers */,
+				C6EB7B71035F5D3A4CCF0D936666B2A5 /* Platform.h in Headers */,
+				23265F8DCE962F7B54FBEE975C834CA2 /* SourceKit.h in Headers */,
+				D294A43F47893AA658F53E7B94675417 /* sourcekitd.h in Headers */,
+				C961E186FD04B117AD21D0CD6E249508 /* SourceKittenFramework-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72267847B6DF0291585FFBEED02ACC5E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEB45CD3CF7EDA3CB18C0A424EB9D648 /* SWXMLHash-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6610ECBEEEA384E4B8888100FA9A86DD /* Pods-FlowGraphViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0D1DE49D8841ECD27B8704CF6000AED /* Build configuration list for PBXNativeTarget "Pods-FlowGraphViewer" */;
+			buildPhases = (
+				0E1B333DE24E495557F9A7E91DABBB8F /* Headers */,
+				9C2AE797BF1EBEA8188B54A792458B6C /* Sources */,
+				1B12F7AA71122C1453AED9C9F2E99F7A /* Frameworks */,
+				679E73218210599EBF75922F6C806F82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF48D99EED2E57BB4F22D84E6767D7EB /* PBXTargetDependency */,
+				DEE1C4774B19DC944C49D38B8619262C /* PBXTargetDependency */,
+				3FEC4E119047542F383CC2594EF6D466 /* PBXTargetDependency */,
+				A6A250F5E5DC332226940BEC2D5A02F8 /* PBXTargetDependency */,
+				86CA5EEBF9D89B534876AD1A04B5FD02 /* PBXTargetDependency */,
+			);
+			name = "Pods-FlowGraphViewer";
+			productName = "Pods-FlowGraphViewer";
+			productReference = EB3590E96BC73EB9B1F926336672FB5C /* Pods_FlowGraphViewer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7672F0C4A88DCECA3A1FEB60BC4D21E8 /* FlowGraphDotConverterCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9636417DB1FE2E8813A4667A0B6B0C6E /* Build configuration list for PBXNativeTarget "FlowGraphDotConverterCore" */;
+			buildPhases = (
+				36C2741C65A0C0BFEA5E8DC126740045 /* Headers */,
+				D0D3ECCDA55FF2A690678F2824768E66 /* Sources */,
+				C0C2DF015F78BF86C49B7028B2B2A2BF /* Frameworks */,
+				C6A3D208C46565B42CA4C8181C51F30F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				228413B15AAB81E2061AE81F37A0984E /* PBXTargetDependency */,
+				D998CCD3A9E39285C7846C0C1F95E10F /* PBXTargetDependency */,
+			);
+			name = FlowGraphDotConverterCore;
+			productName = FlowGraphDotConverterCore;
+			productReference = 48B3F7CCB2412EB074637BF694D36A14 /* FlowGraphDotConverterCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		780ED589F4B15F96EFCCD70E7DB978D6 /* SWXMLHash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D63A5A23FA2281023B9B8A7205A63FF /* Build configuration list for PBXNativeTarget "SWXMLHash" */;
+			buildPhases = (
+				72267847B6DF0291585FFBEED02ACC5E /* Headers */,
+				3D4653B29556BE11C4FEABA0782DC363 /* Sources */,
+				A83C8867834FABEC9BDC3AAA23447F0D /* Frameworks */,
+				CC0F69E704DC21F39C3FC5BD05780489 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SWXMLHash;
+			productName = SWXMLHash;
+			productReference = D944E981D56EB8684E66EF5FFFCDA8D0 /* SWXMLHash.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AB47F5B910425E54285117152ADA9B14 /* Yams */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B538A053D5646246783FB089DC718C0 /* Build configuration list for PBXNativeTarget "Yams" */;
+			buildPhases = (
+				43556F5F6EA0E42DCEE88EA53137F5EC /* Headers */,
+				F381E335B57CC1192C770C562567FD34 /* Sources */,
+				E7AA8B860621A50682D34BE439921AC2 /* Frameworks */,
+				8620EC74C7E8893F9233FCB0CE83AAC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Yams;
+			productName = Yams;
+			productReference = BCA0851DC8DE250F188F220C394C0A8A /* Yams.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CB9500CE119A5E6E1051A94CA5D251E8 /* FlowGraph */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C5A6C58C14E833FE6C5EB6890325FBF /* Build configuration list for PBXNativeTarget "FlowGraph" */;
+			buildPhases = (
+				049356DE10DB4F25837514EC93AE3311 /* Headers */,
+				1A08252C738E12C1478962FE6F5CC83E /* Sources */,
+				9A304E7BCD6A05774E652680548D8335 /* Frameworks */,
+				283CE416ED18E31424CEEE19DE2789A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlowGraph;
+			productName = FlowGraph;
+			productReference = C6B96C2E5C3A154C6DF47F25FE4CB1AC /* FlowGraph.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CC2F8E269F290AEF40956D8CC336B9BB /* SourceKittenFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22107C486C1391BDCB2631F43E962EF9 /* Build configuration list for PBXNativeTarget "SourceKittenFramework" */;
+			buildPhases = (
+				4E0740DE84DEB9A8B3FDA3CCE8986E5E /* Headers */,
+				912B8D952D46CC06010EDF1EC744DCB0 /* Sources */,
+				EC0493D64EFA81D01C3120C8BEC4E7AB /* Frameworks */,
+				61A95B25B51A4120ACFE0529807B1FDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEE7B41E90A6CE99B24321A4AC8EC13D /* PBXTargetDependency */,
+				71F5A48EB21B04CB9E7669EEDE0EE0DE /* PBXTargetDependency */,
+			);
+			name = SourceKittenFramework;
+			productName = SourceKittenFramework;
+			productReference = 2BD06FB6233C2655BD71F8800A029486 /* SourceKittenFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = E6111523DF6EF588EE40EC2876165B20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB9500CE119A5E6E1051A94CA5D251E8 /* FlowGraph */,
+				7672F0C4A88DCECA3A1FEB60BC4D21E8 /* FlowGraphDotConverterCore */,
+				6610ECBEEEA384E4B8888100FA9A86DD /* Pods-FlowGraphViewer */,
+				CC2F8E269F290AEF40956D8CC336B9BB /* SourceKittenFramework */,
+				780ED589F4B15F96EFCCD70E7DB978D6 /* SWXMLHash */,
+				AB47F5B910425E54285117152ADA9B14 /* Yams */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		283CE416ED18E31424CEEE19DE2789A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61A95B25B51A4120ACFE0529807B1FDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		679E73218210599EBF75922F6C806F82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8620EC74C7E8893F9233FCB0CE83AAC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6A3D208C46565B42CA4C8181C51F30F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC0F69E704DC21F39C3FC5BD05780489 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A08252C738E12C1478962FE6F5CC83E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				582B36DF9AED2D4649D4B1593D478D56 /* FlowGraph-dummy.m in Sources */,
+				B34948CDF1F6DEABEA741235C5579297 /* FlowGraph.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D4653B29556BE11C4FEABA0782DC363 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA088319F98878DCFFA4F303F8F8AD12 /* shim.swift in Sources */,
+				9B804E95CB57D726FC2E24F963C57D2E /* SWXMLHash+TypeConversion.swift in Sources */,
+				64A5D7648E8D03A15EA553FDAAA4F52A /* SWXMLHash-dummy.m in Sources */,
+				1F20C42B6B468729FB69C4B56A445F3B /* SWXMLHash.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		912B8D952D46CC06010EDF1EC744DCB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91BB099F72A0BBB1898EB1C06796256A /* Clang+SourceKitten.swift in Sources */,
+				D266FBFFA1DDF40F8DD94BE782E1A43F /* ClangTranslationUnit.swift in Sources */,
+				1EADADB7246EB253C7D0DF85C1B51BFB /* CodeCompletionItem.swift in Sources */,
+				D4A691DE8FAD2E7A5E5D529AF52FD87B /* Dictionary+Merge.swift in Sources */,
+				DAF517592E56B3BF2AFA4A251670A5FF /* Documentation.swift in Sources */,
+				4FBC77FDEE95CE1A8282ABD08847CE68 /* File.swift in Sources */,
+				609C07AC7670EF7C3B477A8D2824D698 /* JSONOutput.swift in Sources */,
+				A1BB82B43D7ED7D521FCECC213CBCB30 /* Language.swift in Sources */,
+				CEF20913F084B7BBA85CAB138D64FC76 /* library_wrapper.swift in Sources */,
+				407A4F1C3461F09CF357735361625A29 /* library_wrapper_CXString.swift in Sources */,
+				B0796B3CBAC9D30B17FABB22F18FDD1C /* library_wrapper_Documentation.swift in Sources */,
+				1F0A28B14860AC403B4AFE9A6A6BE6ED /* library_wrapper_Index.swift in Sources */,
+				C32966AC233C7CA7F98C97E800E3797F /* library_wrapper_sourcekitd.swift in Sources */,
+				E42873C73EB62306E57DB1154401A410 /* LinuxCompatibility.swift in Sources */,
+				BD439941EC1A8F7DA30D8731F48B0B30 /* Module.swift in Sources */,
+				73497F2449301CBE6F5F159605455316 /* ObjCDeclarationKind.swift in Sources */,
+				AFE9363759F2365FDDE3DDFF7E5D0880 /* OffsetMap.swift in Sources */,
+				33D945447383054538484584B15F40E7 /* Parameter.swift in Sources */,
+				3B5E03C342FECB0300E908AF80ECF7B0 /* Request.swift in Sources */,
+				9F03F936634A819F2D3116DED3463DC6 /* shim.swift in Sources */,
+				25FE372819507178B2F8B5EB55880EC9 /* SourceDeclaration.swift in Sources */,
+				0E16A0DE95C6D1CA049EF024C745F358 /* SourceKitObject.swift in Sources */,
+				E2A7105452BAD772A19841B3EB28F93B /* SourceKittenFramework-dummy.m in Sources */,
+				56FDBDD4B7D3C11A99A7498C4A51999E /* SourceLocation.swift in Sources */,
+				6C7F1DF9FFEDE536C6DF8DD8092B1690 /* StatementKind.swift in Sources */,
+				B045B7868E1EC844C1BE36BC5D666B30 /* String+SourceKitten.swift in Sources */,
+				EF0964D3E8EAC3789F6C98521194E04B /* Structure.swift in Sources */,
+				1A6ED6E2C32E0A7ED0888005852837E8 /* SwiftDeclarationAttributeKind.swift in Sources */,
+				FF95232A94AF4E2D6A9D583C775A638E /* SwiftDeclarationKind.swift in Sources */,
+				21FB160CF82BAFF3911D7B6504809D17 /* SwiftDocKey.swift in Sources */,
+				332A5D02945E40196531BB8C03D45A4A /* SwiftDocs.swift in Sources */,
+				B746EF907EE2BDEA490F61DA15E7E453 /* SyntaxKind.swift in Sources */,
+				6D4E143CBF1C953F8747F04ED4A6D79A /* SyntaxMap.swift in Sources */,
+				6D2F6D7957E8663FF2BD07F91AC573AE /* SyntaxToken.swift in Sources */,
+				EC8972176257200A44C1735E564ADA46 /* Text.swift in Sources */,
+				A3847CEF6016941BE2E3C1F9488849AB /* UID.swift in Sources */,
+				836C5C1462031AA56225F1195E25F7D0 /* Version.swift in Sources */,
+				5EEA74BE754E48E37FF47D66D69CC3D0 /* Xcode.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C2AE797BF1EBEA8188B54A792458B6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B23C87BF52BCC334E06182197A08AA13 /* Pods-FlowGraphViewer-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0D3ECCDA55FF2A690678F2824768E66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D473BD1F8F90954E268389C5961068C /* CodeBase.swift in Sources */,
+				E31B802BFA9D7030F81B051348190B22 /* CodeNode.swift in Sources */,
+				A2FB4203C4696FD989D47823D7C14D60 /* CodeScanner.swift in Sources */,
+				8A80516922058DECE06A352678EB86A7 /* CodeStructure.swift in Sources */,
+				F47C0E534141AF427E315488B23C2171 /* CodeSyntaxMap.swift in Sources */,
+				D1CCD31A38422C9918556525692E8EF5 /* Dot.swift in Sources */,
+				B39CD5F4C8E1DC875195573D43757ABE /* FlowGraphDotConverter.swift in Sources */,
+				6BE00A2C874589F33E6826A0C32402F1 /* FlowGraphDotConverterCore-dummy.m in Sources */,
+				63B87E4FDEFC24660913E6092FECC543 /* FlowGraphInitialState.swift in Sources */,
+				142B4019626D2CB6F15A8F2473F77E9E /* FlowGraphInstance.swift in Sources */,
+				81061ECE79FA9E6F4C64960D22F40544 /* FlowGraphNextState.swift in Sources */,
+				0278CA2B0B8EDD8E59B18D3D9862DBF4 /* FlowGraphScanner.swift in Sources */,
+				2BA0880E0D4EBCD3A1A28060ACE587E4 /* FlowGraphState.swift in Sources */,
+				3F1BCBD6C16E68B888E6A277550F3E13 /* SwiftExprKind.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F381E335B57CC1192C770C562567FD34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				091B54770C4C0F618CFFD58F3381B3F0 /* api.c in Sources */,
+				057B91CC97B158FD79CD741D6EA7C11E /* Constructor.swift in Sources */,
+				A27C8D89E83C6E9DF33314FFD20178E0 /* Decoder.swift in Sources */,
+				8607321DA3878B53031F948A976C3F4A /* emitter.c in Sources */,
+				6A63829FEA718FF914BA7A29C8CC5219 /* Emitter.swift in Sources */,
+				D94CE32F396CF871E1156EDDC0EF7406 /* Encoder.swift in Sources */,
+				F81530240EE87B83316E3C6BEAE1EF9D /* Mark.swift in Sources */,
+				E3608583942FED2892D2A0BE6D4AF06E /* Node.Mapping.swift in Sources */,
+				F3792804699433B9F75B8307D02386DE /* Node.Scalar.swift in Sources */,
+				B9626447DA9FCDC87621268957CB2E56 /* Node.Sequence.swift in Sources */,
+				8C89C26BE23ACBD946871ABA5495FCC0 /* Node.swift in Sources */,
+				D8CDC0280065C0DD7CE59868EFBB2CE2 /* parser.c in Sources */,
+				B3F105595D8D8E3F8C0885DA075E145C /* Parser.swift in Sources */,
+				051E98FBCC3933805924AB51D882AF6C /* reader.c in Sources */,
+				F164E6069F014CE7BF5F01A03EE01AFB /* Representer.swift in Sources */,
+				015FE024337C6DC563AB04F5E4B718D1 /* Resolver.swift in Sources */,
+				F69E9DCA3317BD08FE518F1CAFE29640 /* scanner.c in Sources */,
+				A1940228803CFB01EEF74A800B1C81E9 /* shim.swift in Sources */,
+				0E804FAC6BF05D2293D4C2BCB84D4783 /* String+Yams.swift in Sources */,
+				E49171C7333F2A82CA87173C66927BC9 /* Tag.swift in Sources */,
+				85684F64BADD615C72C282A6E2AB061E /* writer.c in Sources */,
+				CB6518A43B29F49D7BFBBBC0339A0B23 /* YamlError.swift in Sources */,
+				5C87658CCF9DDDD6F8BCF6553FB53B65 /* Yams-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		228413B15AAB81E2061AE81F37A0984E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FlowGraph;
+			target = CB9500CE119A5E6E1051A94CA5D251E8 /* FlowGraph */;
+			targetProxy = C5E679F6C1B1EB022FF7AE65C80DE8E3 /* PBXContainerItemProxy */;
+		};
+		3FEC4E119047542F383CC2594EF6D466 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SWXMLHash;
+			target = 780ED589F4B15F96EFCCD70E7DB978D6 /* SWXMLHash */;
+			targetProxy = 1EB3F0E718833FEF146F87037BF0BD1D /* PBXContainerItemProxy */;
+		};
+		71F5A48EB21B04CB9E7669EEDE0EE0DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Yams;
+			target = AB47F5B910425E54285117152ADA9B14 /* Yams */;
+			targetProxy = 730FC6143A02BE30CC0C6A2C8E124711 /* PBXContainerItemProxy */;
+		};
+		86CA5EEBF9D89B534876AD1A04B5FD02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Yams;
+			target = AB47F5B910425E54285117152ADA9B14 /* Yams */;
+			targetProxy = 824A206F6713A19F44B1703EA8A8B685 /* PBXContainerItemProxy */;
+		};
+		A6A250F5E5DC332226940BEC2D5A02F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SourceKittenFramework;
+			target = CC2F8E269F290AEF40956D8CC336B9BB /* SourceKittenFramework */;
+			targetProxy = 32CBAC60531E51BA504543FD65D6389D /* PBXContainerItemProxy */;
+		};
+		D998CCD3A9E39285C7846C0C1F95E10F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SourceKittenFramework;
+			target = CC2F8E269F290AEF40956D8CC336B9BB /* SourceKittenFramework */;
+			targetProxy = E958FB869501A7057D003AEED30B4D42 /* PBXContainerItemProxy */;
+		};
+		DEE1C4774B19DC944C49D38B8619262C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FlowGraphDotConverterCore;
+			target = 7672F0C4A88DCECA3A1FEB60BC4D21E8 /* FlowGraphDotConverterCore */;
+			targetProxy = ABFE8C52508AC426811DADF816FDCDFB /* PBXContainerItemProxy */;
+		};
+		DF48D99EED2E57BB4F22D84E6767D7EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FlowGraph;
+			target = CB9500CE119A5E6E1051A94CA5D251E8 /* FlowGraph */;
+			targetProxy = 314C629D51969F26B5B838B7B6AB9F54 /* PBXContainerItemProxy */;
+		};
+		FEE7B41E90A6CE99B24321A4AC8EC13D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SWXMLHash;
+			target = 780ED589F4B15F96EFCCD70E7DB978D6 /* SWXMLHash */;
+			targetProxy = FE47501B0EC911F8D45A61D257606F51 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0BE9C793B5DB8CE8EC771F2CC176D349 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		0D75C1C480E258D4A2ED3E46B2DEA363 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D43E7D8378730E99941B45784323B4E0 /* Pods-FlowGraphViewer.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-FlowGraphViewer/Pods-FlowGraphViewer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MODULEMAP_FILE = "Target Support Files/Pods-FlowGraphViewer/Pods-FlowGraphViewer.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		22CC9CB438A05B50C1E1AD237EBC634F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0829E732AF00F41AEC150B6A947E4C0B /* FlowGraph.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/FlowGraph/FlowGraph-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FlowGraph/FlowGraph-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/FlowGraph/FlowGraph.modulemap";
+				PRODUCT_MODULE_NAME = FlowGraph;
+				PRODUCT_NAME = FlowGraph;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		36B9B36A68E363CFDA170922B18DA2D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3AFF920BE47774890F8EBCF690A0179 /* SWXMLHash.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/SWXMLHash/SWXMLHash-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SWXMLHash/SWXMLHash-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/SWXMLHash/SWXMLHash.modulemap";
+				PRODUCT_MODULE_NAME = SWXMLHash;
+				PRODUCT_NAME = SWXMLHash;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5FA29C1BA9442A2A9557BCD02F491CF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6743EB4E977A3FA83F07FEB1B826C1F2 /* Yams.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/Yams/Yams-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Yams/Yams-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/Yams/Yams.modulemap";
+				PRODUCT_MODULE_NAME = Yams;
+				PRODUCT_NAME = Yams;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		71C778E7FB22BCDD65828E3F4608E7B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6743EB4E977A3FA83F07FEB1B826C1F2 /* Yams.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/Yams/Yams-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Yams/Yams-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/Yams/Yams.modulemap";
+				PRODUCT_MODULE_NAME = Yams;
+				PRODUCT_NAME = Yams;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		72DEAA56785609DFFCD547DA34A5BD88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FCA72AA01E143EC61675F8B375313D8 /* SourceKittenFramework.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/SourceKittenFramework/SourceKittenFramework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SourceKittenFramework/SourceKittenFramework-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/SourceKittenFramework/SourceKittenFramework.modulemap";
+				PRODUCT_MODULE_NAME = SourceKittenFramework;
+				PRODUCT_NAME = SourceKittenFramework;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BD7C636030110F032DB7C9EE08E52A46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FCA72AA01E143EC61675F8B375313D8 /* SourceKittenFramework.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/SourceKittenFramework/SourceKittenFramework-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SourceKittenFramework/SourceKittenFramework-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/SourceKittenFramework/SourceKittenFramework.modulemap";
+				PRODUCT_MODULE_NAME = SourceKittenFramework;
+				PRODUCT_NAME = SourceKittenFramework;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C4E2701FC5CBBB7D4D3601FF81E601E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF6D2AC4ED2DF592E5F406CFD3088928 /* FlowGraphDotConverterCore.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/FlowGraphDotConverterCore/FlowGraphDotConverterCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FlowGraphDotConverterCore/FlowGraphDotConverterCore-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/FlowGraphDotConverterCore/FlowGraphDotConverterCore.modulemap";
+				PRODUCT_MODULE_NAME = FlowGraphDotConverterCore;
+				PRODUCT_NAME = FlowGraphDotConverterCore;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EA80268A6A2A2563C4B9E1A2F3EE719D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		F179BE69559693D35293E8BEBA89F85E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0829E732AF00F41AEC150B6A947E4C0B /* FlowGraph.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/FlowGraph/FlowGraph-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FlowGraph/FlowGraph-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/FlowGraph/FlowGraph.modulemap";
+				PRODUCT_MODULE_NAME = FlowGraph;
+				PRODUCT_NAME = FlowGraph;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F1E6D9AD8C2CAE3C7E9479D9592604F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3AFF920BE47774890F8EBCF690A0179 /* SWXMLHash.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/SWXMLHash/SWXMLHash-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SWXMLHash/SWXMLHash-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/SWXMLHash/SWXMLHash.modulemap";
+				PRODUCT_MODULE_NAME = SWXMLHash;
+				PRODUCT_NAME = SWXMLHash;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FD1305B6E8EC337D4ACAA3036C9FD0C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F40AC4A26F1ED2233FCC374B9CB98B01 /* Pods-FlowGraphViewer.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-FlowGraphViewer/Pods-FlowGraphViewer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MODULEMAP_FILE = "Target Support Files/Pods-FlowGraphViewer/Pods-FlowGraphViewer.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FEDC199330E562CBFED3D61FB37230F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF6D2AC4ED2DF592E5F406CFD3088928 /* FlowGraphDotConverterCore.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/FlowGraphDotConverterCore/FlowGraphDotConverterCore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FlowGraphDotConverterCore/FlowGraphDotConverterCore-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/FlowGraphDotConverterCore/FlowGraphDotConverterCore.modulemap";
+				PRODUCT_MODULE_NAME = FlowGraphDotConverterCore;
+				PRODUCT_NAME = FlowGraphDotConverterCore;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C5A6C58C14E833FE6C5EB6890325FBF /* Build configuration list for PBXNativeTarget "FlowGraph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22CC9CB438A05B50C1E1AD237EBC634F /* Debug */,
+				F179BE69559693D35293E8BEBA89F85E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D63A5A23FA2281023B9B8A7205A63FF /* Build configuration list for PBXNativeTarget "SWXMLHash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1E6D9AD8C2CAE3C7E9479D9592604F5 /* Debug */,
+				36B9B36A68E363CFDA170922B18DA2D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22107C486C1391BDCB2631F43E962EF9 /* Build configuration list for PBXNativeTarget "SourceKittenFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72DEAA56785609DFFCD547DA34A5BD88 /* Debug */,
+				BD7C636030110F032DB7C9EE08E52A46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BE9C793B5DB8CE8EC771F2CC176D349 /* Debug */,
+				EA80268A6A2A2563C4B9E1A2F3EE719D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B538A053D5646246783FB089DC718C0 /* Build configuration list for PBXNativeTarget "Yams" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71C778E7FB22BCDD65828E3F4608E7B9 /* Debug */,
+				5FA29C1BA9442A2A9557BCD02F491CF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9636417DB1FE2E8813A4667A0B6B0C6E /* Build configuration list for PBXNativeTarget "FlowGraphDotConverterCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEDC199330E562CBFED3D61FB37230F0 /* Debug */,
+				C4E2701FC5CBBB7D4D3601FF81E601E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0D1DE49D8841ECD27B8704CF6000AED /* Build configuration list for PBXNativeTarget "Pods-FlowGraphViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD1305B6E8EC337D4ACAA3036C9FD0C4 /* Debug */,
+				0D75C1C480E258D4A2ED3E46B2DEA363 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
