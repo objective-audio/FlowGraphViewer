@@ -709,20 +709,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1fT-OB-lEU">
+                            <scrollView autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQI-78-HSt">
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="q8R-1q-HZC"/>
-                            </imageView>
+                                <clipView key="contentView" id="mf5-9m-jwq">
+                                    <rect key="frame" x="1" y="1" width="478" height="268"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <view fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tfY-Z6-Ega">
+                                            <rect key="frame" x="0.0" y="0.0" width="463" height="253"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </view>
+                                    </subviews>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="6D7-CB-Iju">
+                                    <rect key="frame" x="1" y="253" width="478" height="16"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="pen-A1-9kP">
+                                    <rect key="frame" x="463" y="1" width="16" height="268"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="1fT-OB-lEU" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="6Sd-9H-txD"/>
-                            <constraint firstAttribute="trailing" secondItem="1fT-OB-lEU" secondAttribute="trailing" id="Bps-eF-2Yr"/>
-                            <constraint firstAttribute="bottom" secondItem="1fT-OB-lEU" secondAttribute="bottom" id="JOS-RV-Y50"/>
-                            <constraint firstItem="1fT-OB-lEU" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="yMo-FN-hyn"/>
+                            <constraint firstItem="lQI-78-HSt" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="14G-cq-78o"/>
+                            <constraint firstAttribute="trailing" secondItem="lQI-78-HSt" secondAttribute="trailing" id="Kac-5q-6YS"/>
+                            <constraint firstItem="lQI-78-HSt" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="s3V-uZ-3af"/>
+                            <constraint firstAttribute="bottom" secondItem="lQI-78-HSt" secondAttribute="bottom" id="shk-Q8-F52"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="1fT-OB-lEU" id="A9b-ku-3CD"/>
+                        <outlet property="scrollView" destination="lQI-78-HSt" id="NLn-nI-XX7"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

@@ -5,12 +5,17 @@
 import Cocoa
 
 class ViewController: NSViewController {
-    @IBOutlet var imageView: NSImageView!
+    @IBOutlet var scrollView: NSScrollView!
+//    @IBOutlet var imageView: NSImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.imageView.image = NSImage(named: NSImage.Name("omatsuri_hashigonori"))
+        if let image = NSImage(named: NSImage.Name("omatsuri_hashigonori")) {
+            let imageView = NSImageView(image: image)
+            imageView.frame = NSMakeRect(0, 0, image.size.width, image.size.height)
+            self.scrollView.documentView = imageView
+        }
     }
 
     override var representedObject: Any? {
