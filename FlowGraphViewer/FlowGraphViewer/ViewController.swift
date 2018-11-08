@@ -10,7 +10,7 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.imageView.image = NSImage(named: NSImage.Name("omatsuri_hashigonori"))
     }
 
     override var representedObject: Any? {
