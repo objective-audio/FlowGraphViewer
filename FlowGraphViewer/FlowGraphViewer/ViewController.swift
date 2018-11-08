@@ -5,6 +5,7 @@
 import Cocoa
 
 class ViewController: NSViewController {
+    @IBOutlet var imageView: NSImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
