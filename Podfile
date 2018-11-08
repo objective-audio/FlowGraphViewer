@@ -8,7 +8,6 @@ target 'FlowGraphViewer' do
   project 'FlowGraphViewer/FlowGraphViewer.xcodeproj'
 
   pod 'FlowGraphDotConverterCore', :git => 'https://github.com/objective-audio/FlowGraphDotConverter.git'
-  # pod 'FlowGraph'
-  # pod 'Chaining'
+  pod 'Chaining'
 
 end
