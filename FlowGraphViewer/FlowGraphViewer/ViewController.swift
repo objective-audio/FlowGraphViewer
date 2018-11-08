@@ -4,26 +4,27 @@
 
 import Cocoa
 
+class FlippedImageView: NSImageView {
+    override var isFlipped: Bool {
+        return true
+    }
+}
+
 class ViewController: NSViewController {
     @IBOutlet var scrollView: NSScrollView!
-//    @IBOutlet var imageView: NSImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         if let image = NSImage(named: NSImage.Name("omatsuri_hashigonori")) {
-            let imageView = NSImageView(image: image)
-            imageView.frame = NSMakeRect(0, 0, image.size.width, image.size.height)
-            self.scrollView.documentView = imageView
+            self.updateImage(image)
         }
     }
 
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
-        }
+    func updateImage(_ image: NSImage) {
+        let imageView = FlippedImageView(image: image)
+        imageView.frame = NSMakeRect(0, 0, image.size.width, image.size.height)
+        self.scrollView.documentView = imageView
     }
-
-
 }
 
