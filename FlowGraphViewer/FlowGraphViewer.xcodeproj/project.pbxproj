@@ -227,6 +227,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FlowGraphViewer/Pods-FlowGraphViewer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Chaining/Chaining.framework",
 				"${BUILT_PRODUCTS_DIR}/FlowGraph/FlowGraph.framework",
 				"${BUILT_PRODUCTS_DIR}/FlowGraphDotConverterCore/FlowGraphDotConverterCore.framework",
 				"${BUILT_PRODUCTS_DIR}/SWXMLHash/SWXMLHash.framework",
@@ -237,6 +238,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Chaining.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlowGraph.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlowGraphDotConverterCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWXMLHash.framework",
