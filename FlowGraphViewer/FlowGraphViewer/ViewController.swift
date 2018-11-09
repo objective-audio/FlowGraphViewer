@@ -15,8 +15,14 @@ class ViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         if let image = NSImage(named: NSImage.Name("omatsuri_hashigonori")) {
+            FileUtils.save(image: image, to: FileUtils.temporaryImageURL())
+        } else {
+            fatalError()
+        }
+        
+        if let image = NSImage(contentsOf: FileUtils.temporaryImageURL()) {
             self.updateImage(image)
         }
     }
