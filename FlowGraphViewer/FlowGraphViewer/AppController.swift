@@ -20,9 +20,8 @@ class AppController {
             
             var image: NSImage? = nil
             if let inUrl = url {
-//                image = NSImage(contentsOf: inUrl)
-#warning("todo swiftを遷移図にする")
                 FlowGraphDotConverter.convert(inFileUrl: inUrl, outDirUrl: FileUtils.temporaryDotURL(), isRemoveEnter: true)
+                image = FileUtils.convertDotToImage()
             }
             
             return image
