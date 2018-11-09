@@ -23,10 +23,10 @@ class ViewController: NSViewController {
         self.imageView = FlippedImageView(frame: NSZeroRect)
         self.scrollView.documentView = self.imageView
         
-        self.pool += AppController.shared.url.chain().do { [weak self] url in self?.updateImage(with: url) }.sync()
+        self.pool += AppController.shared.url.chain().do { [weak self] url in self?.updateImage(url: url) }.sync()
     }
     
-    private func updateImage(with url: URL?) {
+    private func updateImage(url: URL?) {
         if let url = url, let image = NSImage(contentsOf: url) {
             self.updateImage(image)
         } else {
