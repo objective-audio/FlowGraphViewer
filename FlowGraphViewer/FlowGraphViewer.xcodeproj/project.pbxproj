@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A3025482195431300CF37BA /* FileUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3025472195431300CF37BA /* FileUtils.swift */; };
 		1AAA36A82192C0B00052287E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAA36A72192C0B00052287E /* AppDelegate.swift */; };
 		1AAA36AA2192C0B00052287E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAA36A92192C0B00052287E /* ViewController.swift */; };
 		1AAA36AC2192C0B20052287E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AAA36AB2192C0B20052287E /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A3025472195431300CF37BA /* FileUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileUtils.swift; sourceTree = "<group>"; };
 		1AAA36A42192C0B00052287E /* FlowGraphViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowGraphViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AAA36A72192C0B00052287E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AAA36A92192C0B00052287E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 			children = (
 				1AAA36A72192C0B00052287E /* AppDelegate.swift */,
 				1AAA36A92192C0B00052287E /* ViewController.swift */,
+				1A3025472195431300CF37BA /* FileUtils.swift */,
 				1AAA36AB2192C0B20052287E /* Assets.xcassets */,
 				1AAA36AD2192C0B20052287E /* Main.storyboard */,
 				1AAA36B02192C0B20052287E /* Info.plist */,
@@ -279,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A3025482195431300CF37BA /* FileUtils.swift in Sources */,
 				1AAA36AA2192C0B00052287E /* ViewController.swift in Sources */,
 				1AAA36A82192C0B00052287E /* AppDelegate.swift in Sources */,
 			);
@@ -435,6 +439,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = FlowGraphViewer/FlowGraphViewer.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = WVVR5YE53F;
@@ -445,6 +450,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.objective-audio.FlowGraphViewer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
@@ -455,6 +461,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = FlowGraphViewer/FlowGraphViewer.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = WVVR5YE53F;
@@ -465,6 +472,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.objective-audio.FlowGraphViewer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
