@@ -9,6 +9,10 @@ struct FileUtils {
         return URL(fileURLWithPath: NSTemporaryDirectory(), isDirectory: true, relativeTo: nil)
     }
     
+    static func temporaryDotURL() -> URL {
+        return self.temporaryDirectoryURL().appendingPathComponent("dot")
+    }
+    
     static func temporaryImageURL() -> URL {
         return self.temporaryDirectoryURL().appendingPathComponent("temp")
     }

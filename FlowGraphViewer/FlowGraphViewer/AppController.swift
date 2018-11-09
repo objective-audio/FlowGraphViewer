@@ -4,6 +4,7 @@
 
 import Cocoa
 import Chaining
+import FlowGraphDotConverterCore
 
 class AppController {
     static let shared = AppController()
@@ -16,10 +17,12 @@ class AppController {
     init() {
         self.pool += self.url.chain().to { url in
             var image: NSImage? = nil
-            if let url = url {
-                image = NSImage(contentsOf: url)
-            }
+            if let inUrl = url {
+//                image = NSImage(contentsOf: inUrl)
 #warning("todo swiftを遷移図にする")
+                FlowGraphDotConverter.convert(inFileUrl: inUrl, outDirUrl: FileUtils.temporaryDotURL(), isRemoveEnter: true)
+            }
+            
             return image
         }.receive(self.image).sync()
     }
@@ -29,7 +32,7 @@ class AppController {
         openPanel.canChooseDirectories = false
         openPanel.canChooseFiles = true
         openPanel.allowsMultipleSelection = false
-//        openPanel.allowedFileTypes = ["swift"]
+        openPanel.allowedFileTypes = ["swift"]
         
         openPanel.begin { [weak openPanel, weak self] response in
             guard let self = self, let openPanel = openPanel else {
