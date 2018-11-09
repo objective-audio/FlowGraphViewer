@@ -28,8 +28,10 @@ class ViewController: NSViewController {
     
     private func updateImage(with url: URL?) {
         if let url = url, let image = NSImage(contentsOf: url) {
+            self.imageView.image = image
             self.imageView.frame = NSMakeRect(0, 0, image.size.width, image.size.height)
         } else {
+            self.imageView.image = nil
             self.imageView.frame = NSZeroRect
         }
     }
