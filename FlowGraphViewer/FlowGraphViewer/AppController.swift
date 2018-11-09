@@ -15,7 +15,7 @@ class AppController {
         openPanel.canChooseDirectories = false
         openPanel.canChooseFiles = true
         openPanel.allowsMultipleSelection = false
-//        openPanel.allowedFileTypes = ["swift"]
+        openPanel.allowedFileTypes = ["swift"]
         
         openPanel.begin { [weak openPanel, weak self] response in
             guard let self = self, let openPanel = openPanel else {
