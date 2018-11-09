@@ -16,7 +16,7 @@ class ViewController: NSViewController {
     var imageView: FlippedImageView!
     
     var pool = ObserverPool()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
