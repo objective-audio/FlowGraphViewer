@@ -8,7 +8,7 @@ import Chaining
 class AppController {
     static let shared = AppController()
     
-    #warning("とりあえず画像のURLを持ってみる")
+    let url = Holder<URL?>(nil)
     
     func open() {
         let openPanel = NSOpenPanel()
@@ -17,12 +17,14 @@ class AppController {
         openPanel.allowsMultipleSelection = false
 //        openPanel.allowedFileTypes = ["swift"]
         
-        openPanel.begin { response in
+        openPanel.begin { [weak openPanel, weak self] response in
+            guard let openPanel = openPanel, let self = self else {
+                return
+            }
+            
             switch response {
             case NSApplication.ModalResponse.OK:
-                print("ok : \(response)")
-            case NSApplication.ModalResponse.cancel:
-                print("cancel : \(response)")
+                self.url.value = openPanel.url
             default:
                 break
             }
