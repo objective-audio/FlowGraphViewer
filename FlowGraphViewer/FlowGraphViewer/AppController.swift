@@ -9,6 +9,17 @@ class AppController {
     static let shared = AppController()
     
     let url = Holder<URL?>(nil)
+    let image = Holder<NSImage?>(nil)
+    
+    var pool = ObserverPool()
+    
+    init() {
+        self.pool += self.url.chain().to { url in
+            let image: NSImage? = nil
+#warning("todo")
+            return image
+        }.receive(self.image).sync()
+    }
     
     func open() {
         let openPanel = NSOpenPanel()
