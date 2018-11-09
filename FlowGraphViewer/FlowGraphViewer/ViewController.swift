@@ -32,5 +32,9 @@ class ViewController: NSViewController {
         imageView.frame = NSMakeRect(0, 0, image.size.width, image.size.height)
         self.scrollView.documentView = imageView
     }
+    
+    @IBAction func open(_: Any) {
+        print("open")
+    }
 }
 
