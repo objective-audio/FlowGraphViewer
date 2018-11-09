@@ -15,8 +15,11 @@ class AppController {
     
     init() {
         self.pool += self.url.chain().to { url in
-            let image: NSImage? = nil
-#warning("todo")
+            var image: NSImage? = nil
+            if let url = url {
+                image = NSImage(contentsOf: url)
+            }
+#warning("todo swiftを遷移図にする")
             return image
         }.receive(self.image).sync()
     }
