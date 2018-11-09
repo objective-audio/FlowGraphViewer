@@ -15,8 +15,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     @IBAction func open(_ sender: Any) {
-        print("open")
+        AppController.shared.open()
     }
-
 }
 
