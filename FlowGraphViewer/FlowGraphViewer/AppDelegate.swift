@@ -7,10 +7,12 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-
-
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+        guard let image = NSImage(named: NSImage.Name("omatsuri_hashigonori")) else {
+            fatalError()
+        }
+        
+        FileUtils.save(image: image, to: FileUtils.temporaryImageURL())
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
