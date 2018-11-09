@@ -3,6 +3,7 @@
 //
 
 import Cocoa
+import Chaining
 
 class FlippedImageView: NSImageView {
     override var isFlipped: Bool {
@@ -12,29 +13,25 @@ class FlippedImageView: NSImageView {
 
 class ViewController: NSViewController {
     @IBOutlet var scrollView: NSScrollView!
+    var imageView: FlippedImageView!
+    
+    var pool = ObserverPool()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let image = NSImage(named: NSImage.Name("omatsuri_hashigonori")) {
-            FileUtils.save(image: image, to: FileUtils.temporaryImageURL())
-        } else {
-            fatalError()
-        }
+        self.imageView = FlippedImageView(frame: NSZeroRect)
+        self.scrollView.documentView = self.imageView
         
-        if let image = NSImage(contentsOf: FileUtils.temporaryImageURL()) {
-            self.updateImage(image)
-        }
-    }
-
-    func updateImage(_ image: NSImage) {
-        let imageView = FlippedImageView(image: image)
-        imageView.frame = NSMakeRect(0, 0, image.size.width, image.size.height)
-        self.scrollView.documentView = imageView
+        self.pool += AppController.shared.url.chain().do { [weak self] url in self?.updateImage(with: url) }.sync()
     }
     
-    @IBAction func open(_: Any) {
-        print("open")
+    func updateImage(with url: URL?) {
+        if let url = url, let image = NSImage(contentsOf: url) {
+            self.imageView.frame = NSMakeRect(0, 0, image.size.width, image.size.height)
+        } else {
+            self.imageView.frame = NSZeroRect
+        }
     }
 }
 

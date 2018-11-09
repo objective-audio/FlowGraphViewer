@@ -18,7 +18,7 @@ class AppController {
 //        openPanel.allowedFileTypes = ["swift"]
         
         openPanel.begin { [weak openPanel, weak self] response in
-            guard let openPanel = openPanel, let self = self else {
+            guard let self = self, let openPanel = openPanel else {
                 return
             }
             
