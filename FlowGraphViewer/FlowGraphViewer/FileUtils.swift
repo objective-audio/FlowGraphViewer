@@ -17,6 +17,19 @@ struct FileUtils {
         return self.temporaryDirectoryURL().appendingPathComponent("temp")
     }
     
+    static func removeFile(at url: URL) {
+        let fileManager = FileManager.default
+        
+        if fileManager.fileExists(atPath: url.path) {
+            try! fileManager.removeItem(at: url)
+        }
+    }
+    
+    static func removeTemporaryFiles() {
+        self.removeFile(at: self.temporaryDotURL())
+        self.removeFile(at: self.temporaryImageURL())
+    }
+    
     static func save(image: NSImage, to url: URL) {
         let fileManager = FileManager.default
         

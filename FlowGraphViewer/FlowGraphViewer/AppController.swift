@@ -16,6 +16,8 @@ class AppController {
     
     init() {
         self.pool += self.url.chain().to { url in
+            FileUtils.removeTemporaryFiles()
+            
             var image: NSImage? = nil
             if let inUrl = url {
 //                image = NSImage(contentsOf: inUrl)
