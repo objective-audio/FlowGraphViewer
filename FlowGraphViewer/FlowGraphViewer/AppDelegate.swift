@@ -8,6 +8,9 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
+        DispatchQueue.main.async {
+            AppController.shared.open()
+        }
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
